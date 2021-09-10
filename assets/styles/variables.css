@@ -1,0 +1,11 @@
+:root {
+  --bgc: #0b192b;
+  --bgc-two: #2e4c78;
+  --bcg-hard-skills: #ffff;
+  --color: #f4f7f7;
+  --border: 2px solid #f4f7f7;
+  --border-two: 1px solid #e6ecf8;
+  --border-hover: 2px solid #0b192b;
+  --font-size: 26px;
+  --label-color: rgba(41, 51, 71, 0.65);
+}

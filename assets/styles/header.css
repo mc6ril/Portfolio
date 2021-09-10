@@ -1,0 +1,35 @@
+@import "./variables.css";
+
+header {
+  background-color: var(--bgc);
+}
+
+header .navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background-color: var(--footer-bgc);
+  height: 60px;
+  width: 100%;
+}
+header .navigation a {
+  color: var(--color);
+  position: relative;
+}
+a:after {
+  content: "";
+  width: 80%;
+  background-color: var(--color);
+  height: 1px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform-origin: center;
+  transform: translate(-50%, 0) scaleX(0);
+  transition: transform 0.5s ease-in-out;
+}
+a:hover::after {
+  transform: translate(-50%) scaleX(1);
+}

@@ -1,0 +1,50 @@
+@import "./variables.css";
+
+/* Hard skills */
+
+.home .hard-skills {
+  margin-top: -8rem !important ;
+  margin-bottom: 8rem !important ;
+  height: 550px;
+  width: 1200px;
+  margin: 0 auto;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--bcg-hard-skills);
+  box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
+}
+.home .hard-skills div {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 45px;
+  border-bottom: var(--border-two);
+  text-align: center;
+}
+.home .hard-skills div .icon-code,
+.home .hard-skills div .icon-database,
+.home .hard-skills div .icon-smartphone {
+  color: var(--bgc-two);
+  font-size: 42px;
+}
+.home .hard-skills div:not(:last-child) {
+  border-right: var(--border-two);
+}
+.home .hard-skills div h2 {
+  font-size: 24px;
+  line-height: 27px;
+}
+
+.home .hard-skills div h3 {
+  color: var(--bgc-two);
+}
+.home .hard-skills div h3,
+.home .hard-skills div p,
+.home .hard-skills div ul li {
+  font-size: 18px;
+  line-height: 30px;
+}

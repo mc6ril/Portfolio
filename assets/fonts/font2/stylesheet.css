@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "UniversLTW04-93XBlackExt";
+  src: url("UniversLTW04-93XBlackExt.eot");
+  src: url("UniversLTW04-93XBlackExt.eot?#iefix") format("embedded-opentype"),
+    url("UniversLTW04-93XBlackExt.woff2") format("woff2"),
+    url("UniversLTW04-93XBlackExt.woff") format("woff"),
+    url("UniversLTW04-93XBlackExt.ttf") format("truetype"),
+    url("UniversLTW04-93XBlackExt.svg#UniversLTW04-93XBlackExt") format("svg");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "UniversLTW04-63BoldExtended";
+  src: url("UniversLTW04-63BoldExtended.eot");
+  src: url("UniversLTW04-63BoldExtended.eot?#iefix") format("embedded-opentype"),
+    url("UniversLTW04-63BoldExtended.woff2") format("woff2"),
+    url("UniversLTW04-63BoldExtended.woff") format("woff"),
+    url("UniversLTW04-63BoldExtended.ttf") format("truetype"),
+    url("UniversLTW04-63BoldExtended.svg#UniversLTW04-63BoldExtended") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
