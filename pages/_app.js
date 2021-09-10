@@ -4,7 +4,6 @@ import "../assets/fonts/fontstyle.css";
 import "../assets/styles/variables.css";
 import "../assets/styles/header.css";
 import "../assets/styles/profil.css";
-import "../assets/styles/presentation.css";
 import "../assets/styles/hardskills.css";
 import "../assets/styles/contact.css";
 import "../assets/styles/footer.css";
