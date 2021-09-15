@@ -24,3 +24,13 @@ a {
 ul {
   list-style: none;
 }
+h1 {
+  font-size: 36px;
+  line-height: 54px;
+  font-weight: 800;
+  font-family: "UniversLTW04-63BoldExtended";
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 30px auto;
+  max-width: 1000px;
+}

@@ -9,17 +9,19 @@ export default function HardSkills() {
         projets existants.`}
         </p>
         <h3>Languages parlés</h3>
-        <p>HTML, CSS, JavaScript, React, Next.js</p>
+        <p>HTML, CSS, JavaScript, React, Redux, Next.js, Typescript</p>
         <h3>Outils de développement</h3>
         <ul>
           <li>Github</li>
           <li>Terminal</li>
+          <li>Codepen</li>
+          <li>Figma</li>
         </ul>
       </div>
       <div>
         <span className="icon-smartphone"></span>
         <h2> Développeur Mobile</h2>
-        <p>{`J'aime coder des projets mobiles sur mesure.`}</p>
+        <p>{`Création d'applications mobile sur mesure.`}</p>
         <h3>Languages parlés</h3>
         <p>React Native</p>
         <h3>Outils de développement</h3>

@@ -9,7 +9,7 @@ export default function Projects() {
       <p>
         Voici quelques exemples de mes derniers projets. Vous voulez en savoir plus ?{" "}
         <a href="mailto:cyril.lesot@yahoo.fr">
-          <span>Envoyez-moi un mail</span>
+          <span>Envoyez-moi un email</span>
         </a>
       </p>
       <div className="all-projects">

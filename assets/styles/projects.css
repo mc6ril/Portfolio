@@ -1,3 +1,5 @@
+@import "./variables.css";
+
 .home .projects {
   width: 70%;
   margin: 20px auto 230px;
@@ -8,6 +10,18 @@
   gap: 25px;
 }
 
+.home .projects p {
+  max-width: 900px;
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 36px;
+}
+.home .projects p a {
+  color: var(--bgc-two);
+  font-weight: bold;
+}
+
 .home .projects .all-projects {
   display: flex;
   flex-direction: row;
@@ -16,6 +30,7 @@
   align-items: center;
   width: 100%;
   gap: 25px;
+  margin-top: 90px;
 }
 .home .projects .all-projects .project {
   width: 355px;
