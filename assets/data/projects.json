@@ -2,16 +2,19 @@
   {
     "title": "Projet Vinted like",
     "description": "Réalisation d'une réplique du site M.Moustache sur le modèle vinted",
-    "link": "https://react-mrmoustache-cyril.netlify.app/"
+    "link": "https://react-mrmoustache-cyril.netlify.app/",
+    "image": "m-moustache"
   },
   {
     "title": "Projet Marvel",
     "description": "Réalisation d'un test technique avec une API Marvel",
-    "link": "https://marvel-by-cyril-react.netlify.app/"
+    "link": "https://marvel-by-cyril-react.netlify.app/",
+    "image": "marvel.png"
   },
   {
     "title": "Projet Riderz",
     "description": "Réalisation d'une application mobile de rencontres entre motards, se réunissant autour d'évènements",
-    "link": "a-venir..."
+    "link": "a-venir...",
+    "image": "rider"
   }
 ]

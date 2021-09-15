@@ -10,8 +10,8 @@ export default function Header() {
           </Link>
         </li>
         <li>
-          <Link href="/idees">
-            <a>Idées</a>
+          <Link href="/resume">
+            <a>CV</a>
           </Link>
         </li>
         <li>

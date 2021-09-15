@@ -1,0 +1,176 @@
+@import "./variables.css";
+
+.resume {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+/* Left column */
+.resume .left-resume {
+  width: 30%;
+  background-color: var(--bgc);
+  color: var(--color);
+  border: var(--border-hover);
+  padding-top: 20px;
+}
+
+.resume .left-resume > div,
+.resume .right-resume > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.resume .left-resume > div h2,
+.resume .right-resume > div h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  line-height: 60px;
+  text-align: center;
+}
+.resume .left-resume > div h3,
+.resume .right-resume > div h3 {
+  font-size: 26px;
+}
+
+.resume .left-resume > div h4,
+.resume .left-resume > div ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.resume .left-resume > div p {
+  text-align: center;
+  padding: 0;
+  margin-top: 20px;
+  font-size: 28px;
+  line-height: 40px;
+}
+.resume .left-resume > div span {
+  padding-left: 20px;
+}
+
+.resume .left-resume > div li {
+  line-height: 35px;
+}
+.resume .left-resume > div h2 {
+  background-color: var(--bgc-two);
+  width: 100%;
+}
+.resume .left-resume > div ul,
+.resume .right-resume > div ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.resume .left-resume .resume-profil {
+  align-items: center;
+}
+.resume .left-resume .resume-profil img {
+  object-fit: cover;
+}
+.resume .left-resume .resume-profil h3 {
+  font-size: 39px;
+  line-height: 39px;
+  font-family: "UniversLTW04-63BoldExtended";
+}
+.resume .left-resume .resume-hardskills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.resume .left-resume .resume-hardskills svg:not(:last-child) {
+  margin-right: 10px;
+}
+.resume .left-resume .hobbies .hobbies-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.resume .left-resume .hobbies .hobbies-list div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-left: 20px;
+}
+.resume .left-resume .hobbies .hobbies-list div svg {
+  width: 10%;
+}
+.resume .left-resume .hobbies .hobbies-list div span {
+  flex: 1;
+}
+
+/* right-column */
+.resume .right-resume {
+  width: 70%;
+  border: var(--border-hover);
+  border-left: none;
+  background-color: white;
+}
+.resume .right-resume > div h2 {
+  position: relative;
+  width: 100%;
+  padding: 5px 20px;
+}
+.resume .right-resume > div h2::before,
+.resume .right-resume > div h2::after {
+  position: absolute;
+  content: "";
+  width: 95%;
+  height: 2px;
+  background-color: var(--color2);
+  left: 20px;
+}
+.resume .right-resume > div h2::before {
+  top: 0;
+}
+.resume .right-resume > div h2::after {
+  bottom: 0;
+}
+
+.resume .right-resume .resume-header {
+  padding: 50px 20px;
+  width: 100%;
+  text-align: justify;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+.resume .right-resume .resume-header p {
+  padding: 0;
+  font-style: italic;
+}
+
+.resume .right-resume .resume-box .box {
+  display: flex;
+  flex-direction: row;
+  padding: 0 10px 0 20px;
+  width: 100%;
+}
+.resume .right-resume .resume-box .box .dates {
+  min-width: 21%;
+}
+.resume .right-resume .resume-box .box .details {
+  width: 79%;
+  flex: 1;
+}
+.resume .right-resume .resume-box .box ul {
+  padding-left: 10px;
+}
+.resume .right-resume .resume-projects ul {
+  margin-left: 60px;
+}
+
+.resume .right-resume .resume-projects a {
+  text-decoration: underline;
+}

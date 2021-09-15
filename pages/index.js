@@ -3,23 +3,50 @@ import HardSkills from "../components/HardSkills";
 import Presentation from "../components/Presentation";
 import Profil from "../components/Profil";
 
-import { useEffect, useState } from "react";
-import json from "../assets/data/projects.json";
+import Projects from "../components/Projects";
 
-export default function Home() {
-  const [projects, setProjects] = useState(null);
+export default function Home({ data }) {
+  const projectsList = [];
 
-  useEffect(() => {
-    setProjects(json);
-  }, []);
-  console.log(projects);
+  data.forEach((project) => {
+    projectsList.push({
+      name: project.name,
+      stars: project.stargazers_count,
+      url: project.html_url,
+      description: project.description,
+      language: project.language,
+    });
+  });
+
+  console.log(projectsList);
+
   return (
     <Layout page={"Portfolio Cyril Lesot - home"}>
       <section className="home">
         <Profil />
         <Presentation />
         <HardSkills />
+        <Projects />
       </section>
     </Layout>
   );
+}
+
+export async function getStaticProps() {
+  try {
+    const res = await fetch("https://api.github.com/users/mc6ril/repos");
+    const data = await res.json();
+
+    if (!data) {
+      return {
+        notFound: true,
+      };
+    }
+
+    return {
+      props: { data },
+    };
+  } catch (error) {
+    console.error(error);
+  }
 }

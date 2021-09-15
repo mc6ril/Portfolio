@@ -13,7 +13,7 @@ footer {
 }
 footer .new-project {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 37% 37% 26%;
   grid-template-rows: auto;
   place-items: center;
   width: 80%;
@@ -27,18 +27,20 @@ footer .new-project span:first-child {
   font-family: "UniversLTW04-93XBlackExt";
   font-size: 30px;
   line-height: 36px;
-  margin-left: 60px;
+  margin-left: 0 auto;
 }
 footer .new-project p {
-  line-height: 27px;
+  line-height: 25px;
   font-weight: 300;
-  margin-left: 40px;
+  margin-left: 0 auto;
+  letter-spacing: 1.5px;
+  text-align: center;
 }
 footer .new-project span:last-child {
-  font-size: 20px;
+  font-size: 25px;
   line-height: 30px;
   font-weight: 400;
-  margin-left: 70px;
+  margin-left: 0 auto;
   border: var(--border);
   border-radius: 25px;
   padding: 10px 20px;

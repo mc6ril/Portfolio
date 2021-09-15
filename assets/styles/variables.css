@@ -3,9 +3,11 @@
   --bgc-two: #2e4c78;
   --bcg-hard-skills: #ffff;
   --color: #f4f7f7;
+  --color2: lightgrey;
   --border: 2px solid #f4f7f7;
   --border-two: 1px solid #e6ecf8;
   --border-hover: 2px solid #0b192b;
   --font-size: 26px;
   --label-color: rgba(41, 51, 71, 0.65);
+  --shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
 }

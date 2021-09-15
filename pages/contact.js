@@ -9,7 +9,7 @@ export default function Contact() {
       <h1>{`Merci de prendre le temps de me contacter. Comment puis-je vous aider aujourd'hui ?`}</h1>
       <div className="profil-picture">
         <Image
-          src="/profil2.jpg"
+          src="/profil.png"
           alt="my-profile"
           width="250"
           height="250"
