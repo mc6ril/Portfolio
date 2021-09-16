@@ -1,4 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer>
@@ -8,7 +10,9 @@ export default function Footer() {
           Vous êtes intéressés pour que l'on travaille ensemble ? Rencontrons-nous. Le
           café est pour moi.
         </p>
-        <span>C'est parti !</span>
+        <Link href="/contact">
+          <a>C'est parti !</a>
+        </Link>
       </div>
       <p className="citation">
         « La première étape consiste à établir que quelque chose est possible ; alors la

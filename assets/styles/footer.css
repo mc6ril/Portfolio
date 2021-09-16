@@ -34,7 +34,7 @@ footer .new-project p {
   letter-spacing: 1.5px;
   text-align: center;
 }
-footer .new-project span:last-child {
+footer .new-project a {
   font-weight: 400;
   margin-left: 0 auto;
   border: var(--border);
@@ -42,7 +42,7 @@ footer .new-project span:last-child {
   padding: 10px 20px;
   cursor: pointer;
 }
-footer .new-project span:last-child:hover {
+footer .new-project a:hover {
   animation: hover 0.7s;
   animation-fill-mode: forwards;
 }
