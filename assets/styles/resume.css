@@ -9,6 +9,16 @@
   padding-bottom: 12rem;
 }
 
+.resume h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.resume ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
 /* Left column */
 .resume .left-resume {
   width: 30%;
@@ -28,18 +38,6 @@
   margin-bottom: 30px;
 }
 
-.resume .left-resume > div h2,
-.resume .right-resume > div h2 {
-  margin-bottom: 20px;
-  font-size: 30px;
-  line-height: 60px;
-  text-align: center;
-}
-.resume .left-resume > div h3,
-.resume .right-resume > div h3 {
-  font-size: 26px;
-}
-
 .resume .left-resume > div h4,
 .resume .left-resume > div ul {
   padding-left: 20px;
@@ -49,24 +47,14 @@
   text-align: center;
   padding: 0;
   margin-top: 20px;
-  font-size: 28px;
-  line-height: 40px;
 }
 .resume .left-resume > div span {
   padding-left: 20px;
 }
 
-.resume .left-resume > div li {
-  line-height: 35px;
-}
 .resume .left-resume > div h2 {
   background-color: var(--bgc-two);
   width: 100%;
-}
-.resume .left-resume > div ul,
-.resume .right-resume > div ul {
-  list-style-type: disc;
-  margin-left: 20px;
 }
 
 .resume .left-resume .resume-profil {
@@ -74,11 +62,6 @@
 }
 .resume .left-resume .resume-profil img {
   object-fit: cover;
-}
-.resume .left-resume .resume-profil h3 {
-  font-size: 39px;
-  line-height: 39px;
-  font-family: "UniversLTW04-63BoldExtended";
 }
 .resume .left-resume .resume-hardskills {
   display: flex;
@@ -154,14 +137,16 @@
 .resume .right-resume .resume-box .box {
   display: flex;
   flex-direction: row;
+  align-items: flex-start;
   padding: 0 10px 0 20px;
   width: 100%;
 }
 .resume .right-resume .resume-box .box .dates {
-  min-width: 21%;
+  min-width: 20%;
+  margin-top: 0.25em;
 }
 .resume .right-resume .resume-box .box .details {
-  width: 79%;
+  width: 80%;
   flex: 1;
 }
 .resume .right-resume .resume-box .box ul {

@@ -5,7 +5,7 @@
 .home .hard-skills {
   margin-top: -8rem !important ;
   margin-bottom: 8rem !important ;
-  height: 600px;
+  height: 550px;
   width: 1200px;
   margin: 0 auto;
   border-radius: 15px;
@@ -33,18 +33,4 @@
 }
 .home .hard-skills div:not(:last-child) {
   border-right: var(--border-two);
-}
-.home .hard-skills div h2 {
-  font-size: 24px;
-  line-height: 27px;
-}
-
-.home .hard-skills div h3 {
-  color: var(--bgc-two);
-}
-.home .hard-skills div h3,
-.home .hard-skills div p,
-.home .hard-skills div ul li {
-  font-size: 18px;
-  line-height: 30px;
 }

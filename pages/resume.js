@@ -35,27 +35,27 @@ export default function Resume() {
             <FontAwesomeIcon
               icon={["fab", "html5"]}
               style={{ color: "#DC4A25" }}
-              size="2x"
+              size="3x"
             />
             <FontAwesomeIcon
               icon={["fab", "css3-alt"]}
               style={{ color: "#3495D0" }}
-              size="2x"
+              size="3x"
             />
             <FontAwesomeIcon
               icon={["fab", "react"]}
               style={{ color: "#5ED2F3" }}
-              size="2x"
+              size="3x"
             />
             <FontAwesomeIcon
               icon={["fab", "js-square"]}
               style={{ color: "#EFD81D" }}
-              size="2x"
+              size="3x"
             />
             <FontAwesomeIcon
               icon={["fab", "node"]}
               style={{ color: "#75AC5F" }}
-              size="2x"
+              size="3x"
             />
           </div>
           <div>

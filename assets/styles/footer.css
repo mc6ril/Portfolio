@@ -24,21 +24,17 @@ footer .new-project {
   background-color: var(--bgc-two);
 }
 footer .new-project span:first-child {
-  font-family: "UniversLTW04-93XBlackExt";
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 28px;
+  line-height: 1.25em;
   margin-left: 0 auto;
 }
 footer .new-project p {
-  line-height: 25px;
   font-weight: 300;
   margin-left: 0 auto;
   letter-spacing: 1.5px;
   text-align: center;
 }
 footer .new-project span:last-child {
-  font-size: 25px;
-  line-height: 30px;
   font-weight: 400;
   margin-left: 0 auto;
   border: var(--border);
@@ -64,7 +60,6 @@ footer .new-project span:last-child:hover {
 
 footer .citation {
   margin-top: 100px;
-  font-family: "UniversLTW04-63BoldExtended";
   max-width: 500px;
   text-align: center;
 }
@@ -103,7 +98,7 @@ footer .social-network ul li:hover {
 
 footer .social-network ul li span {
   color: var(--color);
-  font-size: var(--font-size);
+  line-height: 1.375em;
   padding: 10px;
 }
 footer .social-network ul li span:hover {

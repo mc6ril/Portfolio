@@ -6,7 +6,7 @@ export default function Contact() {
     <section className="contact layout">
       <Header />
 
-      <h1>{`Merci de prendre le temps de me contacter. Comment puis-je vous aider aujourd'hui ?`}</h1>
+      <h1>{`Merci de prendre le temps de me contacter. Comment puis-je vous aider ?`}</h1>
       <div className="profil-picture">
         <Image
           src="/profil.png"

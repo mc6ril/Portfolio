@@ -18,8 +18,6 @@ export default function Home({ data }) {
     });
   });
 
-  console.log(projectsList);
-
   return (
     <Layout page={"Portfolio Cyril Lesot - home"}>
       <section className="home">

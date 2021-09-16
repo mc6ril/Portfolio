@@ -11,11 +11,8 @@
 }
 
 .home .projects p {
-  max-width: 900px;
-  text-align: justify;
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 36px;
+  max-width: 850px;
+  text-align: center;
 }
 .home .projects p a {
   color: var(--bgc-two);
@@ -24,38 +21,85 @@
 
 .home .projects .all-projects {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  gap: 25px;
+  gap: 135px;
   margin-top: 90px;
 }
 .home .projects .all-projects .project {
-  width: 355px;
-  height: 255px;
-  border-radius: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 950px;
+  height: 480px;
+  cursor: pointer;
+  box-shadow: 0 20px 80px 0 rgb(0 0 0 / 45%);
   position: relative;
-  overflow: hidden;
-  background-color: blue;
 }
+.home .projects .all-projects .project:nth-child(odd) {
+  margin-right: 50px;
+}
+
 .home .projects .all-projects .project img {
   object-fit: cover;
   width: 100%;
 }
 .home .projects .all-projects .project .content {
   position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
   display: flex;
-  flex-direction: column;
+  align-items: flex-end;
+  z-index: 0;
+}
+
+.home .projects .all-projects .project .content:hover {
+  color: var(--color);
+  animation: transition 1s ease-in-out;
+  /* animation-fill-mode: forwards; */
+}
+@keyframes transition {
+  0% {
+    background-color: inherit;
+    opacity: 0;
+  }
+  100% {
+    background-color: var(--bgc-two);
+    opacity: 0.8;
+  }
+}
+
+.home .projects .all-projects .project .content .content-text {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-left: 5%;
+  opacity: 0;
+}
+.home .projects .all-projects .project .content .content-text:hover {
+  animation: transition 1s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.home .projects .all-projects .project .content .content-text .logos {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  margin-top: 20%;
+}
+
+.home .projects .all-projects .project .content h1 {
+  text-align: left;
+}
+.home .projects .all-projects .project .content a {
+  height: 48px;
+  width: 145px;
+  background-color: var(--bgc);
+  color: var(--color);
+  display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }

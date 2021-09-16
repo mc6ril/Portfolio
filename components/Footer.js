@@ -5,10 +5,10 @@ export default function Footer() {
       <div className="new-project">
         <span>Débuter un projet</span>
         <p>
-          Vous êtes intéressé pour que l'on travail ensemble ? Rencontrons nous. Le café
-          est pour moi.
+          Vous êtes intéressés pour que l'on travaille ensemble ? Rencontrons-nous. Le
+          café est pour moi.
         </p>
-        <span>Commençons</span>
+        <span>C'est parti !</span>
       </div>
       <p className="citation">
         « La première étape consiste à établir que quelque chose est possible ; alors la

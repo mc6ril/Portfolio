@@ -2,8 +2,8 @@ import Image from "next/image";
 export default function Profil() {
   return (
     <div className="home-header">
-      <h1 className="title">Développeur FullStack JS</h1>
-      <p>Développeur freelance web et mobile</p>
+      <h1 className="title">Cyril Lesot</h1>
+      <p>Développeur FullStack JS web et mobile</p>
       <div className="profil-picture">
         <Image
           src="/profil.png"

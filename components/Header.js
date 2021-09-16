@@ -9,11 +9,11 @@ export default function Header() {
             <a>Home</a>
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link href="/resume">
             <a>CV</a>
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link href="/contact">
             <a>Contact</a>

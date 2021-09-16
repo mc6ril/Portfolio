@@ -7,7 +7,9 @@
   --border: 2px solid #f4f7f7;
   --border-two: 1px solid #e6ecf8;
   --border-hover: 2px solid #0b192b;
-  --font-size: 26px;
+  --font-size: 16px;
   --label-color: rgba(41, 51, 71, 0.65);
   --shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
+  --title-font: "league_spartanregular";
+  --text-font: "Libre Baskerville", serif;
 }
