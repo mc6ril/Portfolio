@@ -20,8 +20,7 @@ export default function Resume() {
             </div>
             <h3>Cyril Lesot</h3>
             <p>
-              Développeur Web et mobile <br />
-              Fullstack JS
+              Développeur Front-end React.js <br /> Web et mobile
             </p>
           </div>
           <div className="resume-coordinates">
@@ -138,6 +137,12 @@ export default function Resume() {
           <div className="resume-projects">
             <h2>Projets réalisés</h2>
             <ul>
+              <li>
+                Mon portfolio :{" "}
+                <a href="https://cyril-lesot-portfolio.vercel.app/">
+                  https://cyril-lesot-portfolio.vercel.app/
+                </a>
+              </li>
               <li>{`Réalisation d'un MVP d'une application mobile en React Native : rassemblement de motards autour d'évènements`}</li>
               <li>
                 Site Marvel crée avec React :
