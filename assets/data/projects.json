@@ -26,7 +26,7 @@
   {
     "title": "Projet Riderz",
     "description": "Réalisation d'une application mobile de rencontres entre motards, se réunissant autour d'évènements",
-    "link": "a-venir...",
+    "link": "/riderz",
     "icons": [
       { "type": "fab", "iconType": "html5", "color": "#DC4A25" },
       { "type": "fab", "iconType": "css3-alt", "color": "#3495D0" },

@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 import json from "../assets/data/projects.json";
+import ProjectImage from "./ProjectImage";
 
 export default function Projects() {
   const projects = json;
@@ -15,38 +16,7 @@ export default function Projects() {
       </p>
       <div className="all-projects">
         {projects.map((project, index) => {
-          return (
-            <div className="project" key={index}>
-              <Image
-                src={`/${project.image}`}
-                alt="image-project"
-                height="480"
-                width="950"
-                quality="100"
-              />
-              <div className="content">
-                <div className="content-text">
-                  <div className="logos">
-                    {project.icons.map((icon, index) => {
-                      return (
-                        <FontAwesomeIcon
-                          key={index}
-                          icon={[`${icon.type}`, `${icon.iconType}`]}
-                          style={{ color: `${icon.color}` }}
-                          size="3x"
-                        />
-                      );
-                    })}
-                  </div>
-                  <h1>{project.title}</h1>
-                  <a href={`${project.link}`} rel="noreferrer" target="_blank">
-                    <span>Voir le site</span>
-                    <span className="icon-arrow-right"></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          );
+          return <ProjectImage project={project} key={index} />;
         })}
       </div>
     </div>

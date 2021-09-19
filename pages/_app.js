@@ -7,8 +7,11 @@ import "../assets/styles/profil.css";
 import "../assets/styles/hardskills.css";
 import "../assets/styles/contact.css";
 import "../assets/styles/projects.css";
+import "../assets/styles/projectImage.css";
 import "../assets/styles/resume.css";
+import "../assets/styles/riderz.css";
 import "../assets/styles/footer.css";
+import "../assets/styles/responsive.css";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {

@@ -3,7 +3,7 @@ export default function Profil() {
   return (
     <div className="home-header">
       <h1 className="title">Cyril Lesot</h1>
-      <p>Développeur FullStack JS web et mobile</p>
+      <p>Développeur Front-end JS web et mobile</p>
       <div className="profil-picture">
         <Image
           src="/profil.png"

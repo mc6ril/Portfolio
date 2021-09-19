@@ -4,7 +4,7 @@ import Header from "./Header";
 
 export default function Layout({ children, page }) {
   return (
-    <div>
+    <>
       <Head>
         <title>{page}</title>
       </Head>
@@ -12,6 +12,6 @@ export default function Layout({ children, page }) {
       <Header />
       <main className="layout">{children}</main>
       <Footer />
-    </div>
+    </>
   );
 }
