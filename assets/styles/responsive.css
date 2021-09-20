@@ -56,9 +56,16 @@
   .home .home-header p {
     max-width: 600px;
   }
+  .contact form .first-inputs {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .contact form .first-inputs input[type="email"] {
+    margin-bottom: 80px;
+  }
   .contact form .first-inputs input[type="text"],
   .contact form .first-inputs input[type="email"] {
-    width: 250px;
+    width: 520px;
   }
 
   .contact form textarea[name="message"] {
@@ -82,7 +89,7 @@
 
   .contact form .first-inputs input[type="text"],
   .contact form .first-inputs input[type="email"] {
-    width: 120px;
+    width: 260px;
   }
 
   .contact form textarea[name="message"] {
