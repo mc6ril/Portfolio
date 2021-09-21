@@ -1,11 +1,12 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Built with
-* Next.js
-* HTML
-* CSS
-* Deployed on Vercel
 
+- Next.js
+- HTML
+- CSS
+- Mailgun-js
+- Deployed on Vercel
 
 ## Installation
 
@@ -34,5 +35,6 @@ yarn dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 # Portfolio
-Welcome to my portfolio. This website is never finish as I am discovering always new things, new design or new effects to implement. 
+
+Welcome to my portfolio. This website is never finish as I am discovering always new things, new design or new effects to implement.
 This is a simple project to show you what I can produce.
