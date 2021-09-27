@@ -17,11 +17,11 @@ footer .new-project {
   grid-template-rows: auto;
   place-items: center;
   width: 80%;
-  height: 165px;
   border: none;
   border-radius: 25px;
   margin-top: -80px;
   background-color: var(--bgc-two);
+  padding: 60px 0;
 }
 footer .new-project span:first-child {
   font-size: 28px;

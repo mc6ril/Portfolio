@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 @import "./variables.css";
+@import url("https://fonts.googleapis.com/css2?family=Spartan&display=swap");
 
 * {
   padding: 0;
@@ -15,7 +16,7 @@ body {
 }
 
 .layout {
-  background-image: url("https://images.ctfassets.net/rporu91m20dc/6JBpX4behqXJjJtnhROzUd/3e9539c880a6d137e583f921bde98bec/ION_paper_800px.png");
+  background-color: var(--color);
 }
 .home {
   display: flex;
@@ -33,7 +34,7 @@ h1 {
   font-size: 48px;
   line-height: 1.05em;
   font-weight: 800;
-  font-family: "league_spartanregular";
+  font-family: var(--title-font);
   letter-spacing: 1px;
   text-align: center;
   margin: 30px auto;

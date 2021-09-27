@@ -77,7 +77,7 @@ export default function Contact() {
               onChange={(e) => setDescription(e.currentTarget.value)}
             ></textarea>
           </div>
-          {message && <p>{message}</p>}
+          {message && <p className="message">{message}</p>}
         </div>
 
         <input type="submit" value="Envoyer" />
