@@ -39,16 +39,19 @@ h1 {
   text-align: center;
   margin: 30px auto;
   max-width: 1000px;
+  font-weight: bold;
 }
 h2 {
   font-size: 36px;
   line-height: 1.25em;
   font-family: var(--title-font);
+  font-weight: bold;
 }
 h3 {
   font-size: 28px;
   line-height: 1.25em;
   font-family: var(--title-font);
+  font-weight: bold;
 }
 
 h4 {
@@ -56,4 +59,5 @@ h4 {
   line-height: 1.22em;
   color: var(--bgc-two);
   font-family: var(--title-font);
+  font-weight: bold;
 }

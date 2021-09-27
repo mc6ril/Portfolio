@@ -16,6 +16,7 @@ header .navigation {
 }
 header .navigation a {
   color: var(--color);
+  font-family: var(--title-font);
   position: relative;
 }
 header .navigation a:after {
