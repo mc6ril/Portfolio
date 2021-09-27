@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import Image from "next/image";
 import axios from "axios";
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   const [message, setMessage] = useState("");
@@ -31,57 +32,64 @@ export default function Contact() {
   };
 
   return (
-    <section className="contact layout">
-      <Header />
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      exit={{ opacity: 0 }}
+    >
+      <section className="contact layout">
+        <Header />
 
-      <h1>{`Merci de prendre le temps de me contacter. Comment puis-je vous aider ?`}</h1>
-      <div className="profil-picture">
-        <Image
-          src="/profil.png"
-          alt="my-profile"
-          width="250"
-          height="250"
-          quality={100}
-        />
-      </div>
-
-      <form className="contact-form" onSubmit={onHandleSubmit}>
-        <div className="first-inputs">
-          <div className="control">
-            <label htmlFor="name">Nom</label>
-            <input
-              type="text"
-              id="name"
-              required
-              onChange={(e) => setName(e.currentTarget.value)}
-            />
-          </div>
-          <div className="control">
-            <label htmlFor="email">Email</label>
-            <input
-              type="email"
-              id="email"
-              required
-              onChange={(e) => setEmail(e.currentTarget.value)}
-            />
-          </div>
-        </div>
-        <div>
-          <div className="control">
-            <label htmlFor="message">Message</label>
-            <textarea
-              name="message"
-              id="message"
-              rows="5"
-              required
-              onChange={(e) => setDescription(e.currentTarget.value)}
-            ></textarea>
-          </div>
-          {message && <p className="message">{message}</p>}
+        <h1>{`Merci de prendre le temps de me contacter. Comment puis-je vous aider ?`}</h1>
+        <div className="profil-picture">
+          <Image
+            src="/profil.png"
+            alt="my-profile"
+            width="250"
+            height="250"
+            quality={100}
+          />
         </div>
 
-        <input type="submit" value="Envoyer" />
-      </form>
-    </section>
+        <form className="contact-form" onSubmit={onHandleSubmit}>
+          <div className="first-inputs">
+            <div className="control">
+              <label htmlFor="name">Nom</label>
+              <input
+                type="text"
+                id="name"
+                required
+                onChange={(e) => setName(e.currentTarget.value)}
+              />
+            </div>
+            <div className="control">
+              <label htmlFor="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                required
+                onChange={(e) => setEmail(e.currentTarget.value)}
+              />
+            </div>
+          </div>
+          <div>
+            <div className="control">
+              <label htmlFor="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                rows="5"
+                required
+                onChange={(e) => setDescription(e.currentTarget.value)}
+              ></textarea>
+            </div>
+            {message && <p className="message">{message}</p>}
+          </div>
+
+          <input type="submit" value="Envoyer" />
+        </form>
+      </section>
+    </motion.div>
   );
 }
