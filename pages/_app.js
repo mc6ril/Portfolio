@@ -33,11 +33,11 @@ library.add(
   faBiking
 );
 
-import { AnimatePresence, AnimateSharedLayout } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <AnimatePresence exitBeforeEnter initial={false}>
+    <AnimatePresence>
       <Component {...pageProps} />
     </AnimatePresence>
   );

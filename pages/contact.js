@@ -31,65 +31,87 @@ export default function Contact() {
     }
   };
 
-  return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      exit={{ opacity: 0 }}
-    >
-      <section className="contact layout">
-        <Header />
+  //motion
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
 
-        <h1>{`Merci de prendre le temps de me contacter. Comment puis-je vous aider ?`}</h1>
-        <div className="profil-picture">
-          <Image
-            src="/profil.png"
-            alt="my-profile"
-            width="250"
-            height="250"
-            quality={100}
-          />
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const item = {
+    hidden: { y: 200 },
+    show: { y: 0, transition: { ease: "easeOut", duration: 0.7 } },
+  };
+  const animatedImage = {
+    hidden: { scale: 0 },
+    show: { scale: 1, transition: { ease: "easeOut", duration: 0.6 } },
+    exit: { scale: 0 },
+  };
+
+  return (
+    <motion.section
+      className="contact layout"
+      variants={container}
+      initial="hidden"
+      animate="show"
+    >
+      <Header />
+
+      <motion.h1
+        variants={item}
+      >{`Merci de prendre le temps de me contacter. Comment puis-je vous aider ?`}</motion.h1>
+      <motion.div className="profil-picture" variants={animatedImage}>
+        <Image
+          src="/profil.png"
+          alt="my-profile"
+          width="250"
+          height="250"
+          quality={100}
+        />
+      </motion.div>
+
+      <form className="contact-form" onSubmit={onHandleSubmit}>
+        <div className="first-inputs">
+          <div className="control">
+            <label htmlFor="name">Nom</label>
+            <input
+              type="text"
+              id="name"
+              required
+              onChange={(e) => setName(e.currentTarget.value)}
+            />
+          </div>
+          <div className="control">
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              required
+              onChange={(e) => setEmail(e.currentTarget.value)}
+            />
+          </div>
+        </div>
+        <div>
+          <div className="control">
+            <label htmlFor="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              rows="5"
+              required
+              onChange={(e) => setDescription(e.currentTarget.value)}
+            ></textarea>
+          </div>
+          {message && <p className="message">{message}</p>}
         </div>
 
-        <form className="contact-form" onSubmit={onHandleSubmit}>
-          <div className="first-inputs">
-            <div className="control">
-              <label htmlFor="name">Nom</label>
-              <input
-                type="text"
-                id="name"
-                required
-                onChange={(e) => setName(e.currentTarget.value)}
-              />
-            </div>
-            <div className="control">
-              <label htmlFor="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                required
-                onChange={(e) => setEmail(e.currentTarget.value)}
-              />
-            </div>
-          </div>
-          <div>
-            <div className="control">
-              <label htmlFor="message">Message</label>
-              <textarea
-                name="message"
-                id="message"
-                rows="5"
-                required
-                onChange={(e) => setDescription(e.currentTarget.value)}
-              ></textarea>
-            </div>
-            {message && <p className="message">{message}</p>}
-          </div>
-
-          <input type="submit" value="Envoyer" />
-        </form>
-      </section>
-    </motion.div>
+        <input type="submit" value="Envoyer" />
+      </form>
+    </motion.section>
   );
 }

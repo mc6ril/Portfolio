@@ -2,29 +2,46 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function Profil() {
+  const container = {
+    hidden: { opacity: 1 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.04,
+        delay: 0.6,
+      },
+    },
+  };
+
+  const sentence = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { type: "spring", bounce: 0.25, delay: 0.5 } },
+    exit: { opacity: 0 },
+  };
+
+  const item = {
+    hidden: { opacity: 1, y: 200 },
+    visible: { y: 0, transition: { ease: "easeOut", duration: 0.6 } },
+    exit: { opacity: 0, y: -200 },
+  };
+  const animatedImage = {
+    hidden: { scale: 0 },
+    visible: { scale: 1, transition: { ease: "easeOut", duration: 1.5 } },
+    exit: { scale: 0 },
+  };
+
   return (
-    <div className="home-header">
-      <motion.h1
-        className="title"
-        initial={{ x: -1000 }}
-        animate={{ x: 0 }}
-        transition={{ ease: "easeOut", duration: 1 }}
-      >
+    <motion.div
+      className="home-header"
+      variants={container}
+      initial="hidden"
+      animate="visible"
+    >
+      <motion.h1 className="title" variants={item}>
         Cyril Lesot
       </motion.h1>
-      <motion.p
-        initial={{ x: 1000 }}
-        animate={{ x: 0 }}
-        transition={{ ease: "easeOut", duration: 1.5 }}
-      >
-        Développeur Front-end JS web et mobile
-      </motion.p>
-      <motion.div
-        className="profil-picture"
-        initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
-        transition={{ ease: "easeOut", duration: 1.5 }}
-      >
+      <motion.p variants={sentence}>Développeur Front-end JS web et mobile</motion.p>
+      <motion.div className="profil-picture" variants={animatedImage}>
         <Image
           src="/profil.png"
           alt="my-profile"
@@ -33,6 +50,6 @@ export default function Profil() {
           quality={100}
         />
       </motion.div>
-    </div>
+    </motion.div>
   );
 }
