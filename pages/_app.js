@@ -34,8 +34,13 @@ library.add(
 );
 
 import { AnimatePresence } from "framer-motion";
+import { useEffect } from "react";
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    window.history.scrollRestoration = "manual";
+  }, []);
+
   return (
     <AnimatePresence>
       <Component {...pageProps} />
