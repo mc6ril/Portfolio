@@ -7,7 +7,7 @@ export default function Riderz() {
       <section className="riderz">
         <h1>Riderz</h1>
         <p>{`Riderz est un projet de fin de formation au Reacteur. Lucien, porteur d'idée et motard, était frustré de devoir 
-        passer uniquement par Facebook pour aller se balader entre amis. L'idée de cette application à germé entre nous
+        passer uniquement par Facebook pour aller se balader entre amis. L'idée de cette application a germé entre nous
         et nous avons décidé de coder ce projet fullstack !`}</p>
         {/* <p>{`Si vous possedez un téléphone Android, un lien APK est à votre disposition ci dessous. Le lien APK ne fonctionne
         devrait pas fonctionner sur Apple. Rassurez-vous, l'application est tout à fait fonctionnel sur Iphone !`}</p>
