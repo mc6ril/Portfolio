@@ -1,5 +1,4 @@
 @import "./variables.css";
-@import "../fonts/font2/stylesheet.css";
 
 footer {
   background-color: var(--bgc);
