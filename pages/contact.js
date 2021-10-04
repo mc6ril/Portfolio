@@ -3,14 +3,16 @@ import Image from "next/image";
 import axios from "axios";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { traduction } from "../assets/data/lang";
+import { Context } from "../components/context/LangContext";
+import { useContext } from "react";
 
 export default function Contact() {
   const [message, setMessage] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [description, setDescription] = useState("");
-
-  console.log(message);
+  const { lang } = useContext(Context);
 
   const onHandleSubmit = async (e) => {
     e.preventDefault();
@@ -24,10 +26,10 @@ export default function Contact() {
         }
       );
       if (response.status === 200) {
-        setMessage("Email envoyé avec succés");
+        setMessage(`${traduction[lang].contact.sucessMessage}`);
       }
     } catch (error) {
-      setMessage("Une erreur est survenue. Veuillez réessayer.");
+      setMessage(`${traduction[lang].contact.errorMessage}`);
     }
   };
 
@@ -62,9 +64,7 @@ export default function Contact() {
     >
       <Header />
 
-      <motion.h1
-        variants={item}
-      >{`Merci de prendre le temps de me contacter. Comment puis-je vous aider ?`}</motion.h1>
+      <motion.h1 variants={item}>{traduction[lang].contact.title}</motion.h1>
       <motion.div className="profil-picture" variants={animatedImage}>
         <Image
           src="/profil.png"
@@ -78,7 +78,7 @@ export default function Contact() {
       <form className="contact-form" onSubmit={onHandleSubmit}>
         <div className="first-inputs">
           <div className="control">
-            <label htmlFor="name">Nom</label>
+            <label htmlFor="name">{traduction[lang].contact.name}</label>
             <input
               type="text"
               id="name"
@@ -87,7 +87,7 @@ export default function Contact() {
             />
           </div>
           <div className="control">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">{traduction[lang].contact.email}</label>
             <input
               type="email"
               id="email"
@@ -98,7 +98,7 @@ export default function Contact() {
         </div>
         <div>
           <div className="control">
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message">{traduction[lang].contact.message}</label>
             <textarea
               name="message"
               id="message"
@@ -110,7 +110,7 @@ export default function Contact() {
           {message && <p className="message">{message}</p>}
         </div>
 
-        <input type="submit" value="Envoyer" />
+        <input type="submit" value={`${traduction[lang].contact.button}`} />
       </form>
     </motion.section>
   );

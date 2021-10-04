@@ -2,24 +2,28 @@
 
 header {
   background-color: var(--bgc);
+  height: 60px;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
 }
 
-header .navigation {
+header nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 30px;
   background-color: var(--footer-bgc);
-  height: 60px;
+  height: 100%;
   width: 100%;
 }
-header .navigation a {
+header nav a {
   color: var(--color);
   font-family: var(--title-font);
   position: relative;
 }
-header .navigation a:after {
+header nav a:after {
   content: "";
   width: 80%;
   background-color: var(--color);
@@ -31,6 +35,27 @@ header .navigation a:after {
   transform: translate(-50%, 0) scaleX(0);
   transition: transform 0.5s ease-in-out;
 }
-header .navigation a:hover::after {
+header nav a:hover::after {
   transform: translate(-50%) scaleX(1);
+}
+
+header .name {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(50%, -50%);
+  color: var(--color);
+}
+
+header .language {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+header .language select {
+  outline: none;
+  color: var(--color);
+  background-color: var(--footer-bgc);
+  border: none;
 }

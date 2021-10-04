@@ -35,6 +35,7 @@ library.add(
 
 import { AnimatePresence } from "framer-motion";
 import { useEffect } from "react";
+import ContextProvider from "../components/context/LangContext";
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {
@@ -43,7 +44,9 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <AnimatePresence>
-      <Component {...pageProps} />
+      <ContextProvider>
+        <Component {...pageProps} />
+      </ContextProvider>
     </AnimatePresence>
   );
 }

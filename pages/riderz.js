@@ -1,14 +1,16 @@
 import Layout from "../components/Layout";
 import Image from "next/image";
+import { traduction } from "../assets/data/lang";
+import { Context } from "../components/context/LangContext";
+import { useContext } from "react";
 
 export default function Riderz() {
+  const { lang } = useContext(Context);
   return (
     <Layout>
       <section className="riderz">
         <h1>Riderz</h1>
-        <p>{`Riderz est un projet de fin de formation au Reacteur. Lucien, porteur d'idée et motard, était frustré de devoir 
-        passer uniquement par Facebook pour aller se balader entre amis. L'idée de cette application a germé entre nous
-        et nous avons décidé de coder ce projet fullstack !`}</p>
+        <p>{traduction[lang].riderz.presentation}</p>
         {/* <p>{`Si vous possedez un téléphone Android, un lien APK est à votre disposition ci dessous. Le lien APK ne fonctionne
         devrait pas fonctionner sur Apple. Rassurez-vous, l'application est tout à fait fonctionnel sur Iphone !`}</p>
         <h4>

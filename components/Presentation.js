@@ -1,15 +1,16 @@
+import { traduction } from "../assets/data/lang";
+import { Context } from "./context/LangContext";
+import { useContext } from "react";
+
 export default function Presentation() {
+  const { lang } = useContext(Context);
   return (
     <div className="presentation">
       <h1>
-        Bonjour, moi c{`'`}est Cyril ! <br /> Ravi de vous rencontrer.
+        {traduction[lang].presentation.title} <br />
+        {traduction[lang].presentation.titleTwo}
       </h1>
-      <p>
-        {` Après plusieurs années en tant que Revenue Manager dans l'hôtellerie, j'ai
-      décidé de me former au métier de web développeur pour acquérir de nouvelles
-      compétences. Après une formation intensive au Réacteur à Paris, je suis à
-      l'écoute du marché pour tous nouveaux projets !`}
-      </p>
+      <p>{traduction[lang].presentation.content}</p>
     </div>
   );
 }

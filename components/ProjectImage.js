@@ -4,7 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { InView } from "react-intersection-observer";
 
-export default function ProjectImage({ index, project }) {
+export default function ProjectImage({ index, project, website }) {
   return (
     <div className="project" key={index}>
       <InView threshold={0.25}>
@@ -42,7 +42,7 @@ export default function ProjectImage({ index, project }) {
         </div>
         <Link href={`${project.link}`}>
           <a rel="noreferrer" target="_blank">
-            <span>Voir le site</span>
+            <span>{website}</span>
             <span className="icon-arrow-right"></span>
           </a>
         </Link>

@@ -2,24 +2,23 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { InView } from "react-intersection-observer";
+import { traduction } from "../assets/data/lang";
+import { Context } from "./context/LangContext";
+import { useContext } from "react";
 
 export default function Footer() {
+  const { lang } = useContext(Context);
+
   return (
     <footer>
       <div className="new-project">
-        <span>Débuter un projet</span>
-        <p>
-          Vous êtes intéressés pour que l'on travaille ensemble ? Rencontrons-nous. Le
-          café est pour moi.
-        </p>
+        <span>{traduction[lang].footer.newProject.start}</span>
+        <p>{traduction[lang].footer.newProject.content}</p>
         <Link href="/contact">
-          <a>C'est parti !</a>
+          <a>{traduction[lang].footer.newProject.link}</a>
         </Link>
       </div>
-      <p className="citation">
-        « La première étape consiste à établir que quelque chose est possible ; alors la
-        probabilité se produira. » – Elon Musk
-      </p>
+      <p className="citation">{traduction[lang].footer.citation}</p>
       <div className="social-network">
         <InView threshold={0.25}>
           {({ ref, inView, entry }) => (
@@ -60,9 +59,9 @@ export default function Footer() {
       </div>
       <div>
         <p>
-          Réalisé par Cyril Lesot <span>&#169;</span> 2021
+          {traduction[lang].footer.by} <span>&#169;</span> {traduction[lang].footer.in}
         </p>
-        <p>Made with React / Next.js</p>
+        <p>{traduction[lang].footer.with}</p>
       </div>
     </footer>
   );

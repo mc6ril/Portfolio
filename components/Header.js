@@ -1,10 +1,27 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { traduction } from "../assets/data/lang";
+import { Context } from "./context/LangContext";
+import { useContext } from "react";
 
 export default function Header() {
+  const { lang, toggleLang } = useContext(Context);
+
+  const onHandleSelect = (e) => {
+    e.preventDefault();
+    if (e.target.value === "Français" || e.target.value === "French") {
+      toggleLang("FR");
+    } else {
+      toggleLang("EN");
+    }
+  };
+
   return (
     <header>
-      <ul className="navigation">
+      <Link href="/">
+        <a className="name">Cyril Lesot</a>
+      </Link>
+      <nav>
         <motion.li
           initial={{ y: -200 }}
           animate={{ y: 0 }}
@@ -23,7 +40,14 @@ export default function Header() {
             <a>Contact</a>
           </Link>
         </motion.li>
-      </ul>
+      </nav>
+      <div className="language">
+        <select id="language" onChange={onHandleSelect}>
+          {traduction[lang].header.language.map((list, i) => {
+            return <option key={i}>{list}</option>;
+          })}
+        </select>
+      </div>
     </header>
   );
 }

@@ -1,7 +1,12 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { traduction } from "../assets/data/lang";
+import { Context } from "./context/LangContext";
+import { useContext } from "react";
 
 export default function Profil() {
+  const { lang } = useContext(Context);
+
   const container = {
     hidden: { opacity: 1 },
     visible: {
@@ -40,7 +45,7 @@ export default function Profil() {
       <motion.h1 className="title" variants={item}>
         Cyril Lesot
       </motion.h1>
-      <motion.p variants={sentence}>Développeur Front-end JS web et mobile</motion.p>
+      <motion.h3 variants={sentence}>{traduction[lang].profil.title}</motion.h3>
       <motion.div className="profil-picture" variants={animatedImage}>
         <Image
           src="/profil.png"

@@ -1,22 +1,31 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Image from "next/image";
 import json from "../assets/data/projects.json";
 import ProjectImage from "./ProjectImage";
+import { traduction } from "../assets/data/lang";
+import { Context } from "./context/LangContext";
+import { useContext } from "react";
 
 export default function Projects() {
   const projects = json;
+  const { lang } = useContext(Context);
+
   return (
     <div className="projects">
-      <h1>Mes projets récents</h1>
+      <h1>{traduction[lang].projects.title}</h1>
       <p>
-        Voici quelques exemples de mes derniers projets. Vous voulez en savoir plus ?{" "}
+        {traduction[lang].projects.content}{" "}
         <a href="mailto:cyril.lesot@yahoo.fr">
-          <span>Envoyez-moi un email</span>
+          <span>{traduction[lang].projects.mail}</span>
         </a>
       </p>
       <div className="all-projects">
         {projects.map((project, index) => {
-          return <ProjectImage project={project} key={index} />;
+          return (
+            <ProjectImage
+              project={project}
+              key={index}
+              website={traduction[lang].projects.website}
+            />
+          );
         })}
       </div>
     </div>
