@@ -18,7 +18,7 @@ export default function Header() {
 
   return (
     <header>
-      <Link href="/">
+      <Link href="/" aria-label="Home Page">
         <a className="name">Cyril Lesot</a>
       </Link>
       <nav>
@@ -27,7 +27,7 @@ export default function Header() {
           animate={{ y: 0 }}
           transition={{ ease: "easeOut", duration: 0.7 }}
         >
-          <Link href="/">
+          <Link href="/" aria-label="Home Page">
             <a>Home</a>
           </Link>
         </motion.li>
@@ -36,7 +36,7 @@ export default function Header() {
           animate={{ y: 0 }}
           transition={{ ease: "easeOut", duration: 1 }}
         >
-          <Link href="/contact">
+          <Link href="/contact" aria-label="Contact Page">
             <a>Contact</a>
           </Link>
         </motion.li>

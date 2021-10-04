@@ -40,7 +40,7 @@ export default function ProjectImage({ index, project, website }) {
             );
           })}
         </div>
-        <Link href={`${project.link}`}>
+        <Link href={`${project.link}`} aria-label="Visit website">
           <a rel="noreferrer" target="_blank">
             <span>{website}</span>
             <span className="icon-arrow-right"></span>

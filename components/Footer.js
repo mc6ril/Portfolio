@@ -14,7 +14,7 @@ export default function Footer() {
       <div className="new-project">
         <span>{traduction[lang].footer.newProject.start}</span>
         <p>{traduction[lang].footer.newProject.content}</p>
-        <Link href="/contact">
+        <Link href="/contact" aria-label="Contact page">
           <a>{traduction[lang].footer.newProject.link}</a>
         </Link>
       </div>
@@ -29,7 +29,10 @@ export default function Footer() {
                 animate={inView ? { y: 0 } : { y: 60 }}
                 transition={{ type: "easeOut", duration: 0.6 }}
               >
-                <a href="https://www.linkedin.com/in/cyril-lesot-384380100/">
+                <a
+                  href="https://www.linkedin.com/in/cyril-lesot-384380100/"
+                  aria-label="LinkedIn"
+                >
                   <span className="icon-linkedin"></span>
                 </a>
               </motion.li>
@@ -39,7 +42,7 @@ export default function Footer() {
                 animate={inView ? { y: 0 } : { y: 60 }}
                 transition={{ type: "easeOut", duration: 0.7 }}
               >
-                <a href="https://github.com/mc6ril">
+                <a href="https://github.com/mc6ril" aria-label="Github">
                   <span className="icon-github"></span>
                 </a>
               </motion.li>
@@ -49,7 +52,7 @@ export default function Footer() {
                 animate={inView ? { y: 0 } : { y: 60 }}
                 transition={{ type: "easeOut", duration: 0.8 }}
               >
-                <a href="mailto:cyril.lesot@yahoo.fr">
+                <a href="mailto:cyril.lesot@yahoo.fr" aria-label="Mail">
                   <span className="icon-mail"></span>
                 </a>
               </motion.li>
