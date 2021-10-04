@@ -1,6 +1,6 @@
 [
   {
-    "title": "Réplique du site M.Moustache",
+    "title": "M.Moustache",
     "description": "Réalisation d'une réplique du site M.Moustache sur le modèle vinted",
     "link": "https://react-mrmoustache-cyril.netlify.app/",
     "icons": [
@@ -12,7 +12,7 @@
     "image": "m-moustache.jpg"
   },
   {
-    "title": "Projet Marvel",
+    "title": "Marvel",
     "description": "Réalisation d'un test technique avec une API Marvel",
     "link": "https://marvel-by-cyril-react.netlify.app/",
     "icons": [
@@ -24,7 +24,7 @@
     "image": "marvel.png"
   },
   {
-    "title": "Projet Riderz",
+    "title": "Riderz",
     "description": "Réalisation d'une application mobile de rencontres entre motards, se réunissant autour d'évènements",
     "link": "/riderz",
     "icons": [
