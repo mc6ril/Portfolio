@@ -9,11 +9,11 @@ export default function HardSkills() {
     <div className="hard-skills">
       <div>
         <span className="icon-code"></span>
-        <h3>{traduction[lang].hardSkills.front.title}</h3>
+        <h2>{traduction[lang].hardSkills.front.title}</h2>
         <p>{traduction[lang].hardSkills.front.content}</p>
-        <h4>{traduction[lang].hardSkills.front.languages}</h4>
+        <h3>{traduction[lang].hardSkills.front.languages}</h3>
         <p>{traduction[lang].hardSkills.front.contentLanguages}</p>
-        <h4>{traduction[lang].hardSkills.front.devtools}</h4>
+        <h3>{traduction[lang].hardSkills.front.devtools}</h3>
         <ul>
           {traduction[lang].hardSkills.front.contentDevtools.map((list, i) => {
             return <li key={i}>{list}</li>;
@@ -22,11 +22,11 @@ export default function HardSkills() {
       </div>
       <div>
         <span className="icon-smartphone"></span>
-        <h3>{traduction[lang].hardSkills.mobile.title}</h3>
+        <h2>{traduction[lang].hardSkills.mobile.title}</h2>
         <p>{traduction[lang].hardSkills.mobile.content}</p>
-        <h4>{traduction[lang].hardSkills.mobile.languages}</h4>
+        <h3>{traduction[lang].hardSkills.mobile.languages}</h3>
         <p>{traduction[lang].hardSkills.mobile.contentLanguages}</p>
-        <h4>{traduction[lang].hardSkills.mobile.devtools}</h4>
+        <h3>{traduction[lang].hardSkills.mobile.devtools}</h3>
         <ul>
           {traduction[lang].hardSkills.mobile.contentDevtools.map((list, i) => {
             return <li key={i}>{list}</li>;
@@ -35,11 +35,11 @@ export default function HardSkills() {
       </div>
       <div>
         <span className="icon-database"></span>
-        <h3>{traduction[lang].hardSkills.backend.title}</h3>
+        <h2>{traduction[lang].hardSkills.backend.title}</h2>
         <p>{traduction[lang].hardSkills.backend.content}</p>
-        <h4>{traduction[lang].hardSkills.backend.languages}</h4>
+        <h3>{traduction[lang].hardSkills.backend.languages}</h3>
         <p>{traduction[lang].hardSkills.backend.contentLanguages}</p>
-        <h4>{traduction[lang].hardSkills.backend.devtools}</h4>
+        <h3>{traduction[lang].hardSkills.backend.devtools}</h3>
         <ul>
           {traduction[lang].hardSkills.backend.contentDevtools.map((list, i) => {
             return <li key={i}>{list}</li>;

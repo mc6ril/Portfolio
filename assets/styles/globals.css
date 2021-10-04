@@ -42,14 +42,15 @@ h1 {
   font-weight: bold;
 }
 h2 {
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.25em;
   font-family: var(--title-font);
   font-weight: bold;
 }
 h3 {
-  font-size: 28px;
-  line-height: 1.25em;
+  font-size: 22px;
+  line-height: 1.22em;
+  color: var(--bgc-two);
   font-family: var(--title-font);
   font-weight: bold;
 }
