@@ -157,7 +157,7 @@ export const traduction = {
         link: "Let's do this !",
       },
       citation:
-        "« La première étape consiste à établir que quelque chose est possible ; alors la probabilité se produira. » – Elon Musk",
+        "« Persistence is very important. You should not give up unless you are forced to give up. » – Elon Musk",
       by: "Handcrafter by Cyril Lesot",
       in: 2021,
       with: "Made with React / Next.js",
