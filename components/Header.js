@@ -22,24 +22,26 @@ export default function Header() {
         <a className="name">Cyril Lesot</a>
       </Link>
       <nav>
-        <motion.li
-          initial={{ y: -200 }}
-          animate={{ y: 0 }}
-          transition={{ ease: "easeOut", duration: 0.7 }}
-        >
-          <Link href="/" aria-label="Home Page">
-            <a>Home</a>
-          </Link>
-        </motion.li>
-        <motion.li
-          initial={{ y: -200 }}
-          animate={{ y: 0 }}
-          transition={{ ease: "easeOut", duration: 1 }}
-        >
-          <Link href="/contact" aria-label="Contact Page">
-            <a>Contact</a>
-          </Link>
-        </motion.li>
+        <ul>
+          <motion.li
+            initial={{ y: -200 }}
+            animate={{ y: 0 }}
+            transition={{ ease: "easeOut", duration: 0.7 }}
+          >
+            <Link href="/" aria-label="Home Page">
+              <a>Home</a>
+            </Link>
+          </motion.li>
+          <motion.li
+            initial={{ y: -200 }}
+            animate={{ y: 0 }}
+            transition={{ ease: "easeOut", duration: 1 }}
+          >
+            <Link href="/contact" aria-label="Contact Page">
+              <a>Contact</a>
+            </Link>
+          </motion.li>
+        </ul>
       </nav>
       <div className="language">
         <select id="language" onChange={onHandleSelect}>

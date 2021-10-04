@@ -45,7 +45,7 @@ export default function Profil() {
       <motion.h1 className="title" variants={item}>
         Cyril Lesot
       </motion.h1>
-      <motion.h3 variants={sentence}>{traduction[lang].profil.title}</motion.h3>
+      <motion.p variants={sentence}>{traduction[lang].profil.title}</motion.p>
       <motion.div className="profil-picture" variants={animatedImage}>
         <Image
           src="/profil.png"
