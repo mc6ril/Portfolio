@@ -36,25 +36,14 @@ export default function Profil() {
   };
 
   return (
-    <motion.div
-      className="home-header"
-      variants={container}
-      initial="hidden"
-      animate="visible"
-    >
-      <motion.h1 className="title" variants={item}>
+    <motion.section className='home-header' variants={container} initial='hidden' animate='visible'>
+      <motion.h1 className='title' variants={item}>
         Cyril Lesot
       </motion.h1>
       <motion.p variants={sentence}>{traduction[lang].profil.title}</motion.p>
-      <motion.div className="profil-picture" variants={animatedImage}>
-        <Image
-          src="/profil.png"
-          alt="my-profile"
-          width="250"
-          height="250"
-          quality={100}
-        />
+      <motion.div className='profil-picture' variants={animatedImage}>
+        <Image src='/images/profil.png' alt='Mon image de profil sur la page home' width='250' height='250' quality={100} />
       </motion.div>
-    </motion.div>
+    </motion.section>
   );
 }

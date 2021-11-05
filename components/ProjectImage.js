@@ -6,47 +6,35 @@ import { InView } from "react-intersection-observer";
 
 export default function ProjectImage({ index, project, website }) {
   return (
-    <div className="project" key={index}>
+    <section className='project' key={index}>
       <InView threshold={0.25}>
         {({ ref, inView, entry }) => (
           <motion.div
-            className="image"
+            className='image'
             ref={ref}
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ type: "easeOut", duration: 0.6 }}
           >
-            <Image
-              src={`/${project.image}`}
-              alt="image-project"
-              quality="100"
-              layout="fill"
-            />
+            <Image src={`/${project.image}`} alt={project.description} quality='100' layout='fill' />
           </motion.div>
         )}
       </InView>
 
-      <div className="content">
+      <div className='content'>
         <h2>{project.title}</h2>
-        <div className="logos">
+        <div className='logos'>
           {project.icons.map((icon, index) => {
-            return (
-              <FontAwesomeIcon
-                key={index}
-                icon={[`${icon.type}`, `${icon.iconType}`]}
-                style={{ color: `${icon.color}` }}
-                size="3x"
-              />
-            );
+            return <FontAwesomeIcon key={index} icon={[`${icon.type}`, `${icon.iconType}`]} style={{ color: `${icon.color}` }} size='3x' />;
           })}
         </div>
-        <Link href={`${project.link}`} aria-label="Visit website">
-          <a rel="noreferrer" target="_blank">
+        <Link href={`${project.link}`} aria-label={`Visit ${project.title} website`}>
+          <a rel='noreferrer' target='_blank' alt={`Lien vers la page du projet ${project.title}`}>
             <span>{website}</span>
-            <span className="icon-arrow-right"></span>
+            <span className='icon-arrow-right'></span>
           </a>
         </Link>
       </div>
-    </div>
+    </section>
   );
 }

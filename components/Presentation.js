@@ -5,11 +5,11 @@ import { useContext } from "react";
 export default function Presentation() {
   const { lang } = useContext(Context);
   return (
-    <div className="presentation">
-      <h1>
+    <div className='presentation'>
+      <h2 className='section-title'>
         {traduction[lang].presentation.title} <br />
         {traduction[lang].presentation.titleTwo}
-      </h1>
+      </h2>
       <p>{traduction[lang].presentation.content}</p>
     </div>
   );

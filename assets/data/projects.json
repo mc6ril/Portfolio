@@ -9,7 +9,7 @@
       { "type": "fab", "iconType": "react", "color": "#5ED2F3" },
       { "type": "fab", "iconType": "node", "color": "#75AC5F" }
     ],
-    "image": "m-moustache.jpg"
+    "image": "images/m-moustache.jpg"
   },
   {
     "title": "Marvel",
@@ -21,7 +21,7 @@
       { "type": "fab", "iconType": "react", "color": "#5ED2F3" },
       { "type": "fab", "iconType": "node", "color": "#75AC5F" }
     ],
-    "image": "marvel.png"
+    "image": "images/marvel.png"
   },
   {
     "title": "Riderz",
@@ -33,6 +33,6 @@
       { "type": "fab", "iconType": "react", "color": "#5ED2F3" },
       { "type": "fab", "iconType": "node", "color": "#75AC5F" }
     ],
-    "image": "riderz.png"
+    "image": "images/riderz.png"
   }
 ]

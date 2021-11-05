@@ -11,49 +11,31 @@ export default function Footer() {
 
   return (
     <footer>
-      <div className="new-project">
+      <div className='new-project'>
         <span>{traduction[lang].footer.newProject.start}</span>
         <p>{traduction[lang].footer.newProject.content}</p>
-        <Link href="/contact" aria-label="Contact page">
+        <Link href='/contact' aria-label='Contact page' alt='Lien vers la page contact depuis le bas de page'>
           <a>{traduction[lang].footer.newProject.link}</a>
         </Link>
       </div>
-      <p className="citation">{traduction[lang].footer.citation}</p>
-      <div className="social-network">
+      <p className='citation'>{traduction[lang].footer.citation}</p>
+      <div className='social-network'>
         <InView threshold={0.25}>
           {({ ref, inView, entry }) => (
             <ul>
-              <motion.li
-                ref={ref}
-                initial={{ y: 60 }}
-                animate={inView ? { y: 0 } : { y: 60 }}
-                transition={{ type: "easeOut", duration: 0.6 }}
-              >
-                <a
-                  href="https://www.linkedin.com/in/cyril-lesot-384380100/"
-                  aria-label="LinkedIn"
-                >
-                  <span className="icon-linkedin"></span>
+              <motion.li ref={ref} initial={{ y: 60 }} animate={inView ? { y: 0 } : { y: 60 }} transition={{ type: "easeOut", duration: 0.6 }}>
+                <a href='https://www.linkedin.com/in/cyril-lesot-384380100/' aria-label='LinkedIn' alt='Lien externe vers la page LinkedIn de Cyril Lesot'>
+                  <span className='icon-linkedin'></span>
                 </a>
               </motion.li>
-              <motion.li
-                ref={ref}
-                initial={{ y: 60 }}
-                animate={inView ? { y: 0 } : { y: 60 }}
-                transition={{ type: "easeOut", duration: 0.7 }}
-              >
-                <a href="https://github.com/mc6ril" aria-label="Github">
-                  <span className="icon-github"></span>
+              <motion.li ref={ref} initial={{ y: 60 }} animate={inView ? { y: 0 } : { y: 60 }} transition={{ type: "easeOut", duration: 0.7 }}>
+                <a href='https://github.com/mc6ril' aria-label='Github' alt='Lien externe vers la page github de Cyril Lesot'>
+                  <span className='icon-github'></span>
                 </a>
               </motion.li>
-              <motion.li
-                ref={ref}
-                initial={{ y: 60 }}
-                animate={inView ? { y: 0 } : { y: 60 }}
-                transition={{ type: "easeOut", duration: 0.8 }}
-              >
-                <a href="mailto:cyril.lesot@yahoo.fr" aria-label="Mail">
-                  <span className="icon-mail"></span>
+              <motion.li ref={ref} initial={{ y: 60 }} animate={inView ? { y: 0 } : { y: 60 }} transition={{ type: "easeOut", duration: 0.8 }}>
+                <a href='mailto:cyril.lesot@yahoo.fr' aria-label='Mail' alt='Envoyer un mail à Cyril Lesot'>
+                  <span className='icon-mail'></span>
                 </a>
               </motion.li>
             </ul>

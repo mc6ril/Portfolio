@@ -17,14 +17,11 @@ export default function Contact() {
   const onHandleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(
-        `https://portfolio-cyril-lesot.herokuapp.com/form`,
-        {
-          name: name,
-          email: email,
-          description: description,
-        }
-      );
+      const response = await axios.post(`https://portfolio-cyril-lesot.herokuapp.com/form`, {
+        name: name,
+        email: email,
+        description: description,
+      });
       if (response.status === 200) {
         setMessage(`${traduction[lang].contact.sucessMessage}`);
       }
@@ -57,60 +54,39 @@ export default function Contact() {
 
   return (
     <motion.section
-      className="contact layout"
+      className='contact layout'
       variants={container}
-      initial="hidden"
-      animate="show"
+      initial='hidden'
+      animate='show'
+      page={"Portfolio Cyril Lesot, developpeur front-end et mobile - contact"}
     >
       <Header />
 
       <motion.h1 variants={item}>{traduction[lang].contact.title}</motion.h1>
-      <motion.div className="profil-picture" variants={animatedImage}>
-        <Image
-          src="/profil.png"
-          alt="my-profile"
-          width="250"
-          height="250"
-          quality={100}
-        />
+      <motion.div className='profil-picture' variants={animatedImage}>
+        <Image src='/images/profil.png' alt='Mon image de profil sur la page contact' width='250' height='250' quality={100} />
       </motion.div>
 
-      <form className="contact-form" onSubmit={onHandleSubmit}>
-        <div className="first-inputs">
-          <div className="control">
-            <label htmlFor="name">{traduction[lang].contact.name}</label>
-            <input
-              type="text"
-              id="name"
-              required
-              onChange={(e) => setName(e.currentTarget.value)}
-            />
+      <form className='contact-form' onSubmit={onHandleSubmit}>
+        <div className='first-inputs'>
+          <div className='control'>
+            <label htmlFor='name'>{traduction[lang].contact.name}</label>
+            <input type='text' id='name' required onChange={(e) => setName(e.currentTarget.value)} />
           </div>
-          <div className="control">
-            <label htmlFor="email">{traduction[lang].contact.email}</label>
-            <input
-              type="email"
-              id="email"
-              required
-              onChange={(e) => setEmail(e.currentTarget.value)}
-            />
+          <div className='control'>
+            <label htmlFor='email'>{traduction[lang].contact.email}</label>
+            <input type='email' id='email' required onChange={(e) => setEmail(e.currentTarget.value)} />
           </div>
         </div>
         <div>
-          <div className="control">
-            <label htmlFor="message">{traduction[lang].contact.message}</label>
-            <textarea
-              name="message"
-              id="message"
-              rows="5"
-              required
-              onChange={(e) => setDescription(e.currentTarget.value)}
-            ></textarea>
+          <div className='control'>
+            <label htmlFor='message'>{traduction[lang].contact.message}</label>
+            <textarea name='message' id='message' rows='5' required onChange={(e) => setDescription(e.currentTarget.value)}></textarea>
           </div>
-          {message && <p className="message">{message}</p>}
+          {message && <p className='message'>{message}</p>}
         </div>
 
-        <input type="submit" value={`${traduction[lang].contact.button}`} />
+        <input type='submit' value={`${traduction[lang].contact.button}`} />
       </form>
     </motion.section>
   );

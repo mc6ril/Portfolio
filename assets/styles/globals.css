@@ -30,7 +30,8 @@ a {
 ul {
   list-style: none;
 }
-h1 {
+h1,
+.section-title {
   font-size: 48px;
   line-height: 1.05em;
   font-weight: 800;

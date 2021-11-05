@@ -6,9 +6,9 @@ export default function HardSkills() {
   const { lang } = useContext(Context);
 
   return (
-    <div className="hard-skills">
+    <section className='hard-skills'>
       <div>
-        <span className="icon-code"></span>
+        <span className='icon-code'></span>
         <h2>{traduction[lang].hardSkills.front.title}</h2>
         <p>{traduction[lang].hardSkills.front.content}</p>
         <h3>{traduction[lang].hardSkills.front.languages}</h3>
@@ -21,7 +21,7 @@ export default function HardSkills() {
         </ul>
       </div>
       <div>
-        <span className="icon-smartphone"></span>
+        <span className='icon-smartphone'></span>
         <h2>{traduction[lang].hardSkills.mobile.title}</h2>
         <p>{traduction[lang].hardSkills.mobile.content}</p>
         <h3>{traduction[lang].hardSkills.mobile.languages}</h3>
@@ -34,7 +34,7 @@ export default function HardSkills() {
         </ul>
       </div>
       <div>
-        <span className="icon-database"></span>
+        <span className='icon-database'></span>
         <h2>{traduction[lang].hardSkills.backend.title}</h2>
         <p>{traduction[lang].hardSkills.backend.content}</p>
         <h3>{traduction[lang].hardSkills.backend.languages}</h3>
@@ -46,6 +46,6 @@ export default function HardSkills() {
           })}
         </ul>
       </div>
-    </div>
+    </section>
   );
 }

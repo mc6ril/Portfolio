@@ -9,25 +9,19 @@ export default function Projects() {
   const { lang } = useContext(Context);
 
   return (
-    <div className="projects">
-      <h1>{traduction[lang].projects.title}</h1>
+    <section className='projects'>
+      <h2 className='section-title'>{traduction[lang].projects.title}</h2>
       <p>
         {traduction[lang].projects.content}{" "}
-        <a href="mailto:cyril.lesot@yahoo.fr">
+        <a href='mailto:cyril.lesot@yahoo.fr' alt="Lien d'ouverture de la boite mail pour contacter Cyril Lesot">
           <span>{traduction[lang].projects.mail}</span>
         </a>
       </p>
-      <div className="all-projects">
+      <div className='all-projects'>
         {projects.map((project, index) => {
-          return (
-            <ProjectImage
-              project={project}
-              key={index}
-              website={traduction[lang].projects.website}
-            />
-          );
+          return <ProjectImage project={project} key={index} website={traduction[lang].projects.website} />;
         })}
       </div>
-    </div>
+    </section>
   );
 }

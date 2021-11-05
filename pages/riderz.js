@@ -8,44 +8,34 @@ export default function Riderz() {
   const { lang } = useContext(Context);
   return (
     <Layout>
-      <section className="riderz">
+      <section className='riderz' page={`Portfolio Cyril Lesot, developpeur front-end et mobile - riderz`}>
         <h1>Riderz</h1>
         <p>{traduction[lang].riderz.presentation}</p>
-        {/* <p>{`Si vous possedez un téléphone Android, un lien APK est à votre disposition ci dessous. Le lien APK ne fonctionne
-        devrait pas fonctionner sur Apple. Rassurez-vous, l'application est tout à fait fonctionnel sur Iphone !`}</p>
-        <h4>
-          <a href="https://i.diawi.com/yd63xY">Le lien</a>
-        </h4> */}
 
-        <div className="riderz-presentation">
-          <div className="riderz-image">
-            <Image src="/app.png" alt="image-project" quality="100" layout="fill" />
+        <div className='riderz-presentation'>
+          <div className='riderz-image'>
+            <Image src='/images/app.png' alt="Visuel de l'application mobile Riderz" quality='100' layout='fill' />
           </div>
-          <div className="riderz-image">
-            <Image src="/personne.png" alt="image-project" quality="100" layout="fill" />
+          <div className='riderz-image'>
+            <Image src='/images/personne.png' alt="L'équipe du projet de l'application mobile Riderz" quality='100' layout='fill' />
           </div>
-          <div className="riderz-image">
-            <Image src="/idee.png" alt="image-project" quality="100" layout="fill" />
+          <div className='riderz-image'>
+            <Image src='/images/idee.png' alt='Speech rapide du projet avec un visuel fort de moto' quality='100' layout='fill' />
           </div>
-          <div className="riderz-image">
-            <Image src="/facebook.png" alt="image-project" quality="100" layout="fill" />
+          <div className='riderz-image'>
+            <Image src='/images/facebook.png' alt='Possibilité de connecté Riderz directement à Facebook' quality='100' layout='fill' />
           </div>
-          <div className="riderz-image">
-            <Image src="/account.png" alt="image-project" quality="100" layout="fill" />
+          <div className='riderz-image'>
+            <Image src='/images/account.png' alt='Creation de compte Riderz facile' quality='100' layout='fill' />
           </div>
-          <div className="riderz-image">
-            <Image
-              src="/create-event.png"
-              alt="image-project"
-              quality="100"
-              layout="fill"
-            />
+          <div className='riderz-image'>
+            <Image src='/images/create-event.png' alt="Creation d'évènement depuis l'application Riderz" quality='100' layout='fill' />
           </div>
-          <div className="riderz-image">
-            <Image src="/events.png" alt="image-project" quality="100" layout="fill" />
+          <div className='riderz-image'>
+            <Image src='/images/events.png' alt="Explorez les évènements depuis l'application de manière intuitive" quality='100' layout='fill' />
           </div>
-          <div className="riderz-image">
-            <Image src="/contacts.png" alt="image-project" quality="100" layout="fill" />
+          <div className='riderz-image'>
+            <Image src='/images/contacts.png' alt='Gestion des contacts et de ses amis' quality='100' layout='fill' />
           </div>
         </div>
       </section>
