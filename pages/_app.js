@@ -1,22 +1,10 @@
-import "../assets/styles/globals.css";
-import "../assets/fonts/fontstyle.css";
-import "../assets/styles/variables.css";
-import "../assets/styles/header.css";
-import "../assets/styles/profil.css";
-import "../assets/styles/lastwork.css";
-import "../assets/styles/hardskills.css";
-import "../assets/styles/contact.css";
-import "../assets/styles/projects.css";
-import "../assets/styles/projectImage.css";
-import "../assets/styles/resume.css";
-import "../assets/styles/riderz.css";
-import "../assets/styles/footer.css";
-import "../assets/styles/responsive.css";
+import "../assets/styles/index.scss";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faHtml5, faCss3Alt, faJsSquare, faReact, faNode } from "@fortawesome/free-brands-svg-icons";
-import { faHamburger, faRunning, faBiking } from "@fortawesome/free-solid-svg-icons";
-library.add(faHtml5, faCss3Alt, faJsSquare, faReact, faNode, faHamburger, faRunning, faBiking);
+import { faHtml5, faCss3Alt, faJsSquare, faReact, faNode, faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faHamburger, faRunning, faBiking, faEnvelope, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faSass } from "@fortawesome/free-brands-svg-icons";
+library.add(faHtml5, faCss3Alt, faJsSquare, faReact, faNode, faHamburger, faRunning, faBiking, faGithub, faLinkedinIn, faEnvelope, faSass, faArrowRight);
 
 import { AnimatePresence } from "framer-motion";
 import { useEffect } from "react";

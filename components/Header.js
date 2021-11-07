@@ -28,6 +28,11 @@ export default function Header() {
               <a>Home</a>
             </Link>
           </motion.li>
+          <motion.li initial={{ y: -200 }} animate={{ y: 0 }} transition={{ ease: "easeOut", duration: 0.85 }}>
+            <Link href='/resume' aria-label='CV Page' alt='Lien global vers le CV de Cyril Lesot'>
+              <a>CV</a>
+            </Link>
+          </motion.li>
           <motion.li initial={{ y: -200 }} animate={{ y: 0 }} transition={{ ease: "easeOut", duration: 1 }}>
             <Link href='/contact' aria-label='Contact Page' alt='Lien vers la page de contact et son formulaire'>
               <a>Contact</a>

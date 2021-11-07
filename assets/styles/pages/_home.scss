@@ -1,0 +1,229 @@
+.home {
+  .home-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 90px;
+    .title {
+      font-size: 48px;
+      line-height: 54px;
+      font-weight: 800;
+      font-family: $title-font;
+      letter-spacing: 1px;
+      text-align: center;
+      margin: 30px auto;
+      max-width: 1000px;
+    }
+    .title {
+      font-size: 60px;
+    }
+
+    p {
+      max-width: 800px;
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 36px;
+    }
+    .profil-picture {
+      margin: 30px auto;
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+    background-color: $bgc;
+    color: $color;
+    gap: 30px;
+    height: 600px;
+    width: 100%;
+    p {
+      max-width: 800px;
+      text-align: justify;
+    }
+  }
+
+  // last works section
+  .last-works {
+    width: 70%;
+    margin: 20px auto 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    .bocoloco {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      width: 100%;
+      height: 380px;
+      box-shadow: 0 20px 80px 0 rgb(0 0 0 / 45%);
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: $white;
+      .image {
+        position: relative;
+        width: 50%;
+        height: 100%;
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          object-fit: cover;
+          width: 100%;
+        }
+      }
+      .key-infos {
+        width: 100%;
+        height: 100%;
+        > div {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+
+  // hard-skills section
+  .hard-skills {
+    margin-top: -8rem !important ;
+    margin-bottom: 8rem !important ;
+    height: 580px;
+    width: 1200px;
+    margin: 0 auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    background-color: $bcg-hard-skills;
+    box-shadow: $shadow;
+    div {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 30px 45px;
+      border-bottom: $border-two;
+      text-align: center;
+      .icon-code,
+      .icon-database,
+      .icon-smartphone {
+        color: $bgc-two;
+        font-size: 42px;
+      }
+      &:not(:last-child) {
+        border-right: $border-two;
+      }
+    }
+  }
+  // projects section
+  .projects {
+    width: 70%;
+    margin: 20px auto 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    p {
+      max-width: 850px;
+      text-align: center;
+      a {
+        color: $bgc-two;
+        font-weight: bold;
+      }
+    }
+    .all-projects {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: 135px;
+      margin-top: 90px;
+      .project {
+        width: 80%;
+        height: 480px;
+        box-shadow: 0 20px 80px 0 rgb(0 0 0 / 45%);
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+        &:nth-child(odd) {
+          margin-right: 50px;
+        }
+        .image {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: $bgc-two;
+          img {
+            object-fit: cover;
+            width: 100%;
+          }
+          .content {
+            width: calc(100% + 300px);
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            gap: 20px;
+            opacity: 0;
+            padding: 5%;
+            &:hover {
+              color: $color;
+              animation: transition 0.7s ease-in-out;
+              animation-fill-mode: forwards;
+            }
+            p {
+              text-align: left;
+              max-width: 50%;
+            }
+
+            @keyframes transition {
+              0% {
+                transform: translateX(-300px);
+                opacity: 0;
+              }
+              100% {
+                transform: translateX(0);
+                opacity: 1;
+              }
+            }
+            .logos {
+              display: flex;
+              flex-direction: row;
+              gap: 20px;
+              width: 100%;
+            }
+            .links {
+              display: flex;
+              gap: 20px;
+              a {
+                min-height: 48px;
+                min-width: 155px;
+                background-color: $bgc;
+                color: $color;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                margin-top: 20%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

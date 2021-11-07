@@ -25,11 +25,14 @@ export default function Resume({ page }) {
           </div>
           <div className='resume-hardskills'>
             <h2>HardSkills</h2>
-            <FontAwesomeIcon icon={["fab", "html5"]} style={{ color: "#DC4A25" }} size='3x' />
-            <FontAwesomeIcon icon={["fab", "css3-alt"]} style={{ color: "#3495D0" }} size='3x' />
-            <FontAwesomeIcon icon={["fab", "react"]} style={{ color: "#5ED2F3" }} size='3x' />
-            <FontAwesomeIcon icon={["fab", "js-square"]} style={{ color: "#EFD81D" }} size='3x' />
-            <FontAwesomeIcon icon={["fab", "node"]} style={{ color: "#75AC5F" }} size='3x' />
+            <div className='icons'>
+              <FontAwesomeIcon icon={["fab", "html5"]} style={{ color: "#DC4A25" }} size='3x' />
+              <FontAwesomeIcon icon={["fab", "css3-alt"]} style={{ color: "#3495D0" }} size='3x' />
+              <FontAwesomeIcon icon={["fab", "react"]} style={{ color: "#5ED2F3" }} size='3x' />
+              <FontAwesomeIcon icon={["fab", "js-square"]} style={{ color: "#EFD81D" }} size='3x' />
+              <FontAwesomeIcon icon={["fab", "node"]} style={{ color: "#75AC5F" }} size='3x' />
+              <FontAwesomeIcon icon={["fab", "sass"]} style={{ color: "#C66593" }} size='3x' />
+            </div>
           </div>
           <div>
             <h2>SoftSkills</h2>
@@ -47,7 +50,7 @@ export default function Resume({ page }) {
             <h2>Centres d'intérêts</h2>
             <div className='hobbies-list'>
               <div>
-                <FontAwesomeIcon icon='biking' />
+                <FontAwesomeIcon icon='biking' alt />
                 <span>Vélo</span>
               </div>
               <div>
@@ -63,7 +66,7 @@ export default function Resume({ page }) {
         </div>
         <div className='right-resume'>
           <div className='resume-header'>
-            <p>{`Après plusieurs années en tant que Revenue Manager dans l'hôtellerie, j'ai décidé de me former au métier de web développeur pour acquérir de nouvelles compétences. Ayant terminé ma formation au Réacteur à Paris, je suis actuellement en recherche active d'un stage de 6 mois !`}</p>
+            <p>{`Après plusieurs années en tant que Revenue Manager dans l'hôtellerie, j'ai décidé de me former au métier de web développeur pour acquérir de nouvelles compétences. Ayant terminé ma formation au Réacteur à Paris, et après une expérience de près de 3 mois au sein d'une startup en tant que developpeur fullstack JS/ React, je suis actuellement en recherche active de mon premier contrat !`}</p>
           </div>
           <div className='resume-box'>
             <h2>Formation</h2>
@@ -129,6 +132,33 @@ export default function Resume({ page }) {
           </div>
           <div className='resume-box'>
             <h2>Parcours professionnel</h2>
+            <div className='box'>
+              <div className='dates'>
+                <p>10/21 - 12/21</p>
+              </div>
+              <div className='details'>
+                <h3>Développeur fullstack JS/React</h3>
+                <span>Bocoloco, Paris (75)</span> <br />
+                <h4 className='title'> {`>`} Back-office (React)</h4>
+                <ul>
+                  <li>Intégration de nouveaux graphiques pour suivre l'activité avec Rechartjs et mySQL (back-end / front-end)</li>
+                  <li>Développement d'envoie de facture depuis l'application back-office en utilisant l'API Stripe (back-end / front-end)</li>
+                  <li>Refonte du CSS avec l'implémentation de Saas</li>
+                  <li>Revue et mise à jour du code existant</li>
+                </ul>
+                <h4 className='title'>{`>`} Application mobile (React Native)</h4>
+                <ul>
+                  <li>Utilisation de Expo et du langage natif de React Native</li>
+                  <li>Mise à jour et implémentation de nouvelles fonctionnalités</li>
+                </ul>
+                <h4 className='title'>{`>`} Autres outils de développement</h4>
+                <ul>
+                  <li>Utilisation de GIT</li>
+                  <li>Utilisation de Shopify sur la partie site web</li>
+                  <li>Utilisation de Redux</li>
+                </ul>
+              </div>
+            </div>
             <div className='box'>
               <div className='dates'>
                 <p>12/19 - 08/20</p>

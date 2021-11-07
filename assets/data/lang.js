@@ -15,7 +15,7 @@ export const traduction = {
       title: "Mes dernières expériences",
       bocoloco: {
         title: "Bocoloco",
-        description: "Une épicerie zero déchet grâce à des bocaux connectés",
+        description: "Une épicerie zéro déchet grâce à des bocaux connectés",
         applicationTitle: "Plateformes",
         application: "Application mobile, Application web, Back-office",
         languagesTitle: "Languages",
@@ -56,6 +56,7 @@ export const traduction = {
       content: "Voici quelques exemples de mes derniers projets. Vous voulez en savoir plus ?",
       mail: "Envoyez-moi un email",
       website: "Voir le site",
+      source: "Code source",
     },
     contact: {
       title: "Merci de prendre le temps de me contacter. Comment puis-je vous aider ?",
@@ -143,6 +144,7 @@ export const traduction = {
       content: "Here are a few design projects I've worked on recently. Want to see more?",
       mail: "Email me",
       website: "Visit Website",
+      source: "Source code",
     },
     contact: {
       title: "Thanks for taking the time to reach out. How can I help you today?",

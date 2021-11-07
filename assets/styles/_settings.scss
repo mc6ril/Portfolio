@@ -1,5 +1,5 @@
+@import "./variables";
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
-@import "./variables.css";
 @import url("https://fonts.googleapis.com/css2?family=Spartan&display=swap");
 
 * {
@@ -9,14 +9,14 @@
 }
 body {
   font-family: "Libre Baskerville", serif;
-  font-size: var(--font-size);
+  font-size: $font-size;
   line-height: 1.375em;
   font-weight: 300;
   width: 100%;
 }
 
 .layout {
-  background-color: var(--color);
+  background-color: $color;
 }
 .home {
   display: flex;
@@ -35,7 +35,7 @@ h1,
   font-size: 48px;
   line-height: 1.05em;
   font-weight: 800;
-  font-family: var(--title-font);
+  font-family: $title-font;
   letter-spacing: 1px;
   text-align: center;
   margin: 30px auto;
@@ -45,21 +45,21 @@ h1,
 h2 {
   font-size: 28px;
   line-height: 1.25em;
-  font-family: var(--title-font);
+  font-family: $title-font;
   font-weight: bold;
 }
 h3 {
   font-size: 22px;
   line-height: 1.22em;
-  color: var(--bgc-two);
-  font-family: var(--title-font);
+  color: $bgc-two;
+  font-family: $title-font;
   font-weight: bold;
 }
 
 h4 {
   font-size: 22px;
   line-height: 1.22em;
-  color: var(--bgc-two);
-  font-family: var(--title-font);
+  color: $bgc-two;
+  font-family: $title-font;
   font-weight: bold;
 }

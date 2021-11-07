@@ -19,7 +19,7 @@ export default function Projects() {
       </p>
       <div className='all-projects'>
         {projects.map((project, index) => {
-          return <ProjectImage project={project} key={index} website={traduction[lang].projects.website} />;
+          return <ProjectImage project={project} key={index} website={traduction[lang].projects.website} code={traduction[lang].projects.source} />;
         })}
       </div>
     </section>

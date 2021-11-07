@@ -1,8 +1,14 @@
 [
   {
     "title": "M.Moustache",
-    "description": "Réalisation d'une réplique du site M.Moustache sur le modèle vinted",
+    "FR": {
+      "description": "Réalisation d'une réplique du site M.Moustache sur le modèle vinted"
+    },
+    "EN": {
+      "description": "Replica of M.Moustache website using vinted's model"
+    },
     "link": "https://react-mrmoustache-cyril.netlify.app/",
+    "github": "https://github.com/mc6ril/React-vinted-front",
     "icons": [
       { "type": "fab", "iconType": "html5", "color": "#DC4A25" },
       { "type": "fab", "iconType": "css3-alt", "color": "#3495D0" },
@@ -13,8 +19,14 @@
   },
   {
     "title": "Marvel",
-    "description": "Réalisation d'un test technique avec une API Marvel",
+    "FR": {
+      "description": "Réalisation d'un test technique avec une API Marvel"
+    },
+    "EN": {
+      "description": "Technical test using Marvel's API"
+    },
     "link": "https://marvel-by-cyril-react.netlify.app/",
+    "github": "https://github.com/mc6ril/marvel-front",
     "icons": [
       { "type": "fab", "iconType": "html5", "color": "#DC4A25" },
       { "type": "fab", "iconType": "css3-alt", "color": "#3495D0" },
@@ -25,7 +37,12 @@
   },
   {
     "title": "Riderz",
-    "description": "Réalisation d'une application mobile de rencontres entre motards, se réunissant autour d'évènements",
+    "FR": {
+      "description": "Réalisation d'une application mobile en React Native, de rencontres entre motards, se réunissant autour d'évènements"
+    },
+    "EN": {
+      "description": "Realization of a mobile application using React Native, for meetings between bikers and around events"
+    },
     "link": "/riderz",
     "icons": [
       { "type": "fab", "iconType": "html5", "color": "#DC4A25" },

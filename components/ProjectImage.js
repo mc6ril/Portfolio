@@ -3,8 +3,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { InView } from "react-intersection-observer";
+import { useContext, useState } from "react";
+import { Context } from "./context/LangContext";
 
-export default function ProjectImage({ index, project, website }) {
+export default function ProjectImage({ index, project, website, code }) {
+  const [isVisible, setIsVisible] = useState(true);
+  const { lang } = useContext(Context);
+
   return (
     <section className='project' key={index}>
       <InView threshold={0.25}>
@@ -15,26 +20,41 @@ export default function ProjectImage({ index, project, website }) {
             initial={{ opacity: 0 }}
             animate={inView ? { opacity: 1 } : { opacity: 0 }}
             transition={{ type: "easeOut", duration: 0.6 }}
+            onMouseEnter={() => setIsVisible(false)}
+            onMouseLeave={() => setIsVisible(true)}
           >
-            <Image src={`/${project.image}`} alt={project.description} quality='100' layout='fill' />
+            {isVisible ? (
+              <Image src={`/${project.image}`} alt={project[lang].description} quality='100' layout='fill' />
+            ) : (
+              <div className='content'>
+                <h2>{project.title}</h2>
+                <p>{project[lang].description}</p>
+                <div className='logos'>
+                  {project.icons.map((icon, index) => {
+                    return <FontAwesomeIcon key={index} icon={[`${icon.type}`, `${icon.iconType}`]} style={{ color: `${icon.color}` }} size='3x' />;
+                  })}
+                </div>
+                <div className='links'>
+                  <Link href={`${project.link}`} aria-label={`Visit ${project.title} website`}>
+                    <a rel='noreferrer' target='_blank' alt={`Lien vers la page du projet ${project.title}`}>
+                      <span>{website}</span>
+                      <FontAwesomeIcon icon='arrow-right' />
+                    </a>
+                  </Link>
+                  {project.github && (
+                    <Link href={`${project.github}`} aria-label={`Visit ${project.source} on Github`}>
+                      <a rel='noreferrer' target='_blank' alt={`Lien vers la page du projet sur Github`}>
+                        <span>{code}</span>
+                        <FontAwesomeIcon icon={[`fab`, `github`]} size='1x' />
+                      </a>
+                    </Link>
+                  )}
+                </div>
+              </div>
+            )}
           </motion.div>
         )}
       </InView>
-
-      <div className='content'>
-        <h2>{project.title}</h2>
-        <div className='logos'>
-          {project.icons.map((icon, index) => {
-            return <FontAwesomeIcon key={index} icon={[`${icon.type}`, `${icon.iconType}`]} style={{ color: `${icon.color}` }} size='3x' />;
-          })}
-        </div>
-        <Link href={`${project.link}`} aria-label={`Visit ${project.title} website`}>
-          <a rel='noreferrer' target='_blank' alt={`Lien vers la page du projet ${project.title}`}>
-            <span>{website}</span>
-            <span className='icon-arrow-right'></span>
-          </a>
-        </Link>
-      </div>
     </section>
   );
 }

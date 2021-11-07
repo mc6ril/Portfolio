@@ -1,0 +1,107 @@
+@media screen and (max-width: 1200px) {
+  .home {
+    .hard-skills {
+      height: inherit;
+      max-width: 70vmin;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      background-color: inherit;
+      box-shadow: inherit;
+      div {
+        width: 100%;
+        background-color: $bcg-hard-skills;
+        box-shadow: $shadow;
+        border-radius: 15px;
+        &:not(:last-child) {
+          border-right: none;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  footer {
+    .new-project {
+      grid-template-columns: 100%;
+      row-gap: 40px;
+      width: 80vmin;
+      height: 290px;
+      padding: 20px 0;
+    }
+  }
+  .home {
+    .home-header {
+      .title {
+        font-size: 60px;
+      }
+      p {
+        max-width: 70vmin;
+      }
+    }
+    .presentation {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 80px;
+      background-color: $bgc;
+      color: $color;
+      gap: 30px;
+      height: inherit;
+      width: 100%;
+      h1 {
+        max-width: 70vmin;
+      }
+      p {
+        text-align: justify;
+        margin-bottom: 10em;
+        max-width: 70vmin;
+      }
+    }
+    .last-works {
+      .bocoloco {
+        flex-direction: column-reverse;
+        justify-content: center;
+        height: 600px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .contact form {
+    .first-inputs {
+      flex-direction: column;
+      gap: 20px;
+      input[type="email"] {
+        margin-bottom: 80px;
+      }
+      input[type="text"],
+      input[type="email"] {
+        width: 80vmin;
+      }
+    }
+    textarea[name="message"] {
+      max-width: 80vmin;
+    }
+  }
+  .home {
+    .projects {
+      width: 90%;
+      padding-left: 20px;
+      .all-projects {
+        gap: 55px;
+        .project {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .home .presentation {
+    margin-bottom: 2em !important;
+  }
+}

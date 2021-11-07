@@ -5,6 +5,7 @@ import { InView } from "react-intersection-observer";
 import { traduction } from "../assets/data/lang";
 import { Context } from "./context/LangContext";
 import { useContext } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Footer() {
   const { lang } = useContext(Context);
@@ -25,17 +26,17 @@ export default function Footer() {
             <ul>
               <motion.li ref={ref} initial={{ y: 60 }} animate={inView ? { y: 0 } : { y: 60 }} transition={{ type: "easeOut", duration: 0.6 }}>
                 <a href='https://www.linkedin.com/in/cyril-lesot-384380100/' aria-label='LinkedIn' alt='Lien externe vers la page LinkedIn de Cyril Lesot'>
-                  <span className='icon-linkedin'></span>
+                  <FontAwesomeIcon icon={[`fab`, `linkedin-in`]} size='1x' />
                 </a>
               </motion.li>
               <motion.li ref={ref} initial={{ y: 60 }} animate={inView ? { y: 0 } : { y: 60 }} transition={{ type: "easeOut", duration: 0.7 }}>
                 <a href='https://github.com/mc6ril' aria-label='Github' alt='Lien externe vers la page github de Cyril Lesot'>
-                  <span className='icon-github'></span>
+                  <FontAwesomeIcon icon={[`fab`, `github`]} size='1x' />
                 </a>
               </motion.li>
               <motion.li ref={ref} initial={{ y: 60 }} animate={inView ? { y: 0 } : { y: 60 }} transition={{ type: "easeOut", duration: 0.8 }}>
                 <a href='mailto:cyril.lesot@yahoo.fr' aria-label='Mail' alt='Envoyer un mail à Cyril Lesot'>
-                  <span className='icon-mail'></span>
+                  <FontAwesomeIcon icon={[`fa`, `envelope`]} size='1x' />
                 </a>
               </motion.li>
             </ul>
