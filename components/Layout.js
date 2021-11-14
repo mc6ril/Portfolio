@@ -14,9 +14,7 @@ export default function Layout({ children, page }) {
     <>
       <html lang='fr'>
         <Head>
-
-<meta name="google-site-verification" content="_rX4UrBTq40RyUQxfSe51DRs4CYurT6uJZJlsPX0MA4" />
-
+          <meta name='google-site-verification' content='_rX4UrBTq40RyUQxfSe51DRs4CYurT6uJZJlsPX0MA4' />
           <meta name='description' content='Portfolio de Cyril Lesot, Web Developpeur front-end et mobile'></meta>
           <title>{page}</title>
         </Head>
