@@ -85,7 +85,7 @@ export const traduction = {
       with: "Site réalisé avec React / Next.js",
     },
     header: {
-      language: ["Français", "Anglais"],
+      language: ["🇫🇷", "🇬🇧"],
     },
   },
   EN: {
@@ -172,7 +172,7 @@ export const traduction = {
       with: "Made with React / Next.js",
     },
     header: {
-      language: ["French", "English"],
+      language: ["🇫🇷", "🇬🇧"],
     },
   },
   ES: {},

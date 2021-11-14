@@ -32,7 +32,7 @@ ul {
 }
 h1,
 .section-title {
-  font-size: 48px;
+  font-size: 3em;
   line-height: 1.05em;
   font-weight: 800;
   font-family: $title-font;
@@ -43,13 +43,13 @@ h1,
   font-weight: bold;
 }
 h2 {
-  font-size: 28px;
+  font-size: 1.75em;
   line-height: 1.25em;
   font-family: $title-font;
   font-weight: bold;
 }
 h3 {
-  font-size: 22px;
+  font-size: 1.4em;
   line-height: 1.22em;
   color: $bgc-two;
   font-family: $title-font;
@@ -57,7 +57,7 @@ h3 {
 }
 
 h4 {
-  font-size: 22px;
+  font-size: 1.4em;
   line-height: 1.22em;
   color: $bgc-two;
   font-family: $title-font;

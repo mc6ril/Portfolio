@@ -70,6 +70,14 @@
   }
 }
 @media screen and (max-width: 800px) {
+  header {
+    .name {
+      display: none;
+    }
+    nav li:nth-child(2) {
+      display: none;
+    }
+  }
   .contact form {
     .first-inputs {
       flex-direction: column;

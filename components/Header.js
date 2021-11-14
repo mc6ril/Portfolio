@@ -9,7 +9,7 @@ export default function Header() {
 
   const onHandleSelect = (e) => {
     e.preventDefault();
-    if (e.target.value === "Français" || e.target.value === "French") {
+    if (e.target.value === "🇫🇷") {
       toggleLang("FR");
     } else {
       toggleLang("EN");
@@ -42,8 +42,8 @@ export default function Header() {
       </nav>
       <div className='language'>
         <select id='language' onChange={onHandleSelect}>
-          {traduction[lang].header.language.map((list, i) => {
-            return <option key={i}>{list}</option>;
+          {traduction[lang].header.language.map((list) => {
+            return <option key={list}>{list}</option>;
           })}
         </select>
       </div>

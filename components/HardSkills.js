@@ -13,8 +13,8 @@ export default function HardSkills() {
         <motion.section
           className='hard-skills'
           ref={ref}
-          initial={{ y: -200 }}
-          animate={inView ? { y: 0 } : { y: -200 }}
+          initial={{ x: -200, opacity: 0 }}
+          animate={inView ? { x: 0, opacity: 1 } : { x: -200, opacity: 0 }}
           transition={{ type: "easeOut", duration: 0.8 }}
         >
           <div className='icon-code'>
