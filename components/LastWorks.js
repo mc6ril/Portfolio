@@ -20,8 +20,11 @@ const LastWorks = () => {
             transition={{ type: "easeOut", duration: 0.8 }}
           >
             <div className='key-infos'>
-              <h3>{traduction[lang].lastWork.bocoloco.title}</h3>
-              <p>{traduction[lang].lastWork.bocoloco.description}</p>
+              <i>
+                <h3>{traduction[lang].lastWork.bocoloco.title}</h3>
+                <p>{traduction[lang].lastWork.bocoloco.description}</p>
+              </i>
+
               <div className='fields'>
                 <h4>{traduction[lang].lastWork.bocoloco.applicationTitle}</h4>
                 <p>{traduction[lang].lastWork.bocoloco.application}</p>
