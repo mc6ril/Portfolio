@@ -70,12 +70,29 @@
   }
 }
 @media screen and (max-width: 800px) {
+  h1,
+  .section-title {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3,
+  h4 {
+    font-size: 1.3em;
+  }
   header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     .name {
       display: none;
     }
-    nav li:nth-child(2) {
-      display: none;
+    nav {
+      li:nth-child(2) {
+        display: none;
+      }
     }
   }
   .contact form {
