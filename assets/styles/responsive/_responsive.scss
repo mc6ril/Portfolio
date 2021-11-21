@@ -20,6 +20,13 @@
         }
       }
     }
+    .last-works {
+      .key-infos {
+        i {
+          width: 105% !important;
+        }
+      }
+    }
   }
 }
 @media screen and (max-width: 1000px) {
@@ -119,6 +126,20 @@
         gap: 55px;
         .project {
           width: 100%;
+        }
+      }
+    }
+    .last-works {
+      .key-infos {
+        i {
+          height: 80px !important;
+          &::before {
+            top: 80px !important;
+          }
+        }
+
+        .fields {
+          margin-top: 95px !important;
         }
       }
     }
