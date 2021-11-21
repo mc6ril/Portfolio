@@ -130,16 +130,19 @@
       }
     }
     .last-works {
-      .key-infos {
+      .bocoloco .key-infos {
         i {
-          height: 80px !important;
+          height: 80px;
           &::before {
-            top: 80px !important;
+            top: 80px;
+          }
+          &::after {
+            top: 75px;
           }
         }
 
         .fields {
-          margin-top: 95px !important;
+          margin-top: 95px;
         }
       }
     }
@@ -149,5 +152,25 @@
 @media screen and (max-width: 530px) {
   .home .presentation {
     margin-bottom: 2em !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .last-works {
+    .bocoloco .key-infos {
+      i {
+        height: 95px !important;
+        &::before {
+          top: 95px !important;
+        }
+        &::after {
+          top: 90px !important;
+        }
+      }
+
+      .fields {
+        margin-top: 110px !important;
+      }
+    }
   }
 }

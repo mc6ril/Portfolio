@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 - Next.js
 - HTML
-- CSS
+- SASS
 - Mailgun-js
 - Deployed on Vercel
 
