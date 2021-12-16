@@ -66,6 +66,7 @@ export const traduction = {
       button: "Envoyer",
       sucessMessage: "Email envoyé avec succés",
       errorMessage: "Une erreur est survenue. Veuillez réessayer.",
+      emptyForm: "Tous les champs sont requis.",
     },
     riderz: {
       presentation: `Riderz est un projet de fin de formation au Reacteur. Lucien, porteur d'idée et motard, était frustré de devoir 
@@ -154,6 +155,7 @@ export const traduction = {
       button: "Submit",
       sucessMessage: "Email sent with succés",
       errorMessage: "An error occured. Please, try again.",
+      emptyForm: "All fields are required",
     },
     riderz: {
       presentation: `Riderz is a final project into Le Reacteur. Lucien, sponsor and biker was frustrated to exclusively use

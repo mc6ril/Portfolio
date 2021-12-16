@@ -35,7 +35,7 @@ export default function Footer() {
                 </a>
               </motion.li>
               <motion.li ref={ref} initial={{ y: 60 }} animate={inView ? { y: 0 } : { y: 60 }} transition={{ type: "easeOut", duration: 0.8 }}>
-                <a href='mailto:cyril.lesot@yahoo.fr' aria-label='Mail' alt='Envoyer un mail à Cyril Lesot'>
+                <a href='mailto:cyril.lesot.dev@gmail.com' aria-label='Mail' alt='Envoyer un mail à Cyril Lesot'>
                   <FontAwesomeIcon icon={[`fa`, `envelope`]} size='1x' />
                 </a>
               </motion.li>

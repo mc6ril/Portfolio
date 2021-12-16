@@ -9,9 +9,7 @@ const ContextProvider = (props) => {
     setLang(changeLang);
   };
 
-  return (
-    <Context.Provider value={{ lang, toggleLang }}>{props.children}</Context.Provider>
-  );
+  return <Context.Provider value={{ lang, toggleLang }}>{props.children}</Context.Provider>;
 };
 
 export default ContextProvider;

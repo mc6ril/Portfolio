@@ -2,6 +2,7 @@
 import Layout from "../components/Layout";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { SiMongodb, SiMysql, SiRedux } from "react-icons/si";
 
 export default function Resume({ page }) {
   return (
@@ -32,6 +33,10 @@ export default function Resume({ page }) {
               <FontAwesomeIcon icon={["fab", "js-square"]} style={{ color: "#EFD81D" }} size='3x' />
               <FontAwesomeIcon icon={["fab", "node"]} style={{ color: "#75AC5F" }} size='3x' />
               <FontAwesomeIcon icon={["fab", "sass"]} style={{ color: "#C66593" }} size='3x' />
+              <FontAwesomeIcon icon={["fab", "github"]} style={{ color: "white" }} size='3x' />
+              <SiMongodb size='3em' color='#7ABD7E' />
+              <SiMysql size='3em' color='#F2F2F2' />
+              <SiRedux size='3em' color='#6F44B3' />
             </div>
           </div>
           <div>
@@ -139,23 +144,18 @@ export default function Resume({ page }) {
               <div className='details'>
                 <h3>Développeur fullstack JS/React</h3>
                 <span>Bocoloco, Paris (75)</span> <br />
-                <h4 className='title'> {`>`} Back-office (React)</h4>
+                <h4 className='title'> {`>`} Application de pilotage d'entreprise / CRM (React)</h4>
                 <ul>
                   <li>Intégration de nouveaux graphiques pour suivre l'activité avec Rechartjs et mySQL (back-end / front-end)</li>
-                  <li>Développement d'envoie de facture depuis l'application back-office en utilisant l'API Stripe (back-end / front-end)</li>
+                  <li>Automatisation d'envoie de facture depuis l'application back-office en utilisant l'API Stripe (back-end / front-end)</li>
+                  <li>Utilisation de Redux</li>
                   <li>Refonte du CSS avec l'implémentation de Saas</li>
-                  <li>Revue et mise à jour du code existant</li>
+                  <li>Revue et refactoring du code existant</li>
                 </ul>
                 <h4 className='title'>{`>`} Application mobile (React Native)</h4>
                 <ul>
                   <li>Utilisation de Expo et du langage natif de React Native</li>
                   <li>Mise à jour et implémentation de nouvelles fonctionnalités</li>
-                </ul>
-                <h4 className='title'>{`>`} Autres outils de développement</h4>
-                <ul>
-                  <li>Utilisation de GIT</li>
-                  <li>Utilisation de Shopify sur la partie site web</li>
-                  <li>Utilisation de Redux</li>
                 </ul>
               </div>
             </div>

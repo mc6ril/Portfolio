@@ -1,4 +1,5 @@
 import "../assets/styles/index.scss";
+import "notyf/notyf.min.css";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faHtml5, faCss3Alt, faJsSquare, faReact, faNode, faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
