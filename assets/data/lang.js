@@ -8,7 +8,7 @@ export const traduction = {
       titleTwo: "Ravi de vous rencontrer.",
       content: `Après plusieurs années en tant que Revenue Manager dans l'hôtellerie, j'ai
         décidé de me former au métier de web développeur pour acquérir de nouvelles
-        compétences. Après une formation intensive au Réacteur à Paris, je suis à
+        compétences. Après une formation intensive au Réacteur à Paris puis un stage de 4 mois chez Bocoloco en tant que développeur full stack je suis à
         l'écoute du marché pour tous nouveaux projets !`,
     },
     lastWork: {
@@ -30,7 +30,7 @@ export const traduction = {
         title: "Développeur Front-end",
         content: "J'aime coder des projets FromScratch, ou apporter de nouvelles idées à des projets existants.",
         languages: "Languages",
-        contentLanguages: "HTML, CSS, JavaScript, React, Redux, Next.js, Typescript",
+        contentLanguages: "HTML, CSS, JavaScript, React, Redux, Next.js",
         devtools: "Outils de développement",
         contentDevtools: ["Github", "Terminal", "Codepen", "Figma"],
       },
@@ -48,7 +48,7 @@ export const traduction = {
         languages: "Languages",
         contentLanguages: "Node.js",
         devtools: "Outils de développement",
-        contentDevtools: ["Express", "Cloudinary", "MongoDB", "Stripe", "Postman", "Mailgun"],
+        contentDevtools: ["Express", "Cloudinary", "MongoDB", "MySQL", "Stripe", "Postman", "Mailgun"],
       },
     },
     projects: {
@@ -97,7 +97,7 @@ export const traduction = {
       title: "Hi, I'm Cyril! ",
       titleTwo: "Nice to meet you.",
       content: `After many years working as Revenue Manager in hospitality industry, I decided to follow a formation
-          in web developement in order to have more skills and to increase my employability. After a hard and intensive formation,
+          in web developement in order to have more skills and to increase my employability. After a hard and intensive formation and a first experience as a full-stack developper during 4 month at Bocoloco,
           I am available to work and open for all new projects.`,
     },
     lastWork: {
@@ -137,7 +137,7 @@ export const traduction = {
         languages: "Languages",
         contentLanguages: "Node.js",
         devtools: "Dev Tools",
-        contentDevtools: ["Express", "Cloudinary", "MongoDB", "Stripe", "Postman", "Mailgun"],
+        contentDevtools: ["Express", "Cloudinary", "MongoDB", "MySQL", "Stripe", "Postman", "Mailgun"],
       },
     },
     projects: {

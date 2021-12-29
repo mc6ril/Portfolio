@@ -24,6 +24,7 @@ export default function Contact() {
         email: form.email,
         description: form.description,
       });
+      console.log(response);
 
       if (response.status === 200) {
         notyf.success({ message: `${traduction[lang].contact.sucessMessage}`, delay: 3000 });
