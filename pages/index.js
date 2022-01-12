@@ -3,7 +3,7 @@ import HardSkills from "../components/HardSkills";
 import Presentation from "../components/Presentation";
 import Profil from "../components/Profil";
 import Projects from "../components/Projects";
-import LastWorks from "../components/LastWorks";
+import LastWorks from "../components/last_works/LastWorks";
 
 export default function Home() {
   return (
