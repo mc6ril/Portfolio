@@ -1,8 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Layout from "../components/Layout";
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { SiMongodb, SiMysql, SiRedux } from "react-icons/si";
+import Logos from "../components/logos/Logos";
 
 export default function Resume({ page }) {
   return (
@@ -28,16 +27,16 @@ export default function Resume({ page }) {
           <div className='resume-hardskills'>
             <h2>HardSkills</h2>
             <div className='icons'>
-              <FontAwesomeIcon icon={["fab", "html5"]} style={{ color: "#DC4A25" }} size='3x' />
-              <FontAwesomeIcon icon={["fab", "css3-alt"]} style={{ color: "#3495D0" }} size='3x' />
-              <FontAwesomeIcon icon={["fab", "react"]} style={{ color: "#5ED2F3" }} size='3x' />
-              <FontAwesomeIcon icon={["fab", "js-square"]} style={{ color: "#EFD81D" }} size='3x' />
-              <FontAwesomeIcon icon={["fab", "node"]} style={{ color: "#75AC5F" }} size='3x' />
-              <FontAwesomeIcon icon={["fab", "sass"]} style={{ color: "#C66593" }} size='3x' />
-              <FontAwesomeIcon icon={["fab", "github"]} style={{ color: "white" }} size='3x' />
-              <SiMongodb size='3em' color='#7ABD7E' />
-              <SiMysql size='3em' color='#F2F2F2' />
-              <SiRedux size='3em' color='#6F44B3' />
+              <Logos type='html' size='3em' />
+              <Logos type='css' size='3em' />
+              <Logos type='react' size='3em' />
+              <Logos type='js' size='3em' />
+              <Logos type='node' size='3em' />
+              <Logos type='sass' size='3em' />
+              <Logos type='github' size='3em' />
+              <Logos type='mongo' size='3em' />
+              <Logos type='mysql' size='3em' />
+              <Logos type='redux' size='3em' />
             </div>
           </div>
           <div>
@@ -56,15 +55,16 @@ export default function Resume({ page }) {
             <h2>Centres d'intérêts</h2>
             <div className='hobbies-list'>
               <div>
-                <FontAwesomeIcon icon='biking' alt />
+                <Logos type='biking' />
                 <span>Vélo</span>
               </div>
               <div>
-                <FontAwesomeIcon icon='running' />
+                <Logos type='running' />
+
                 <span>Running</span>
               </div>
               <div>
-                <FontAwesomeIcon icon='hamburger' />
+                <Logos type='hamburger' />
                 <span>Cuisine</span>
               </div>
             </div>
