@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { traduction } from "../assets/data/lang";
 import { Context } from "../components/context/LangContext";
 import { Notyf } from "notyf";
+import Head from "next/head";
 
 export default function Contact() {
   const [notyf, setNotyf] = useState(null);
@@ -24,7 +25,6 @@ export default function Contact() {
         email: form.email,
         description: form.description,
       });
-      console.log(response);
 
       if (response.status === 200) {
         notyf.success({ message: `${traduction[lang].contact.sucessMessage}`, delay: 3000 });
@@ -66,13 +66,12 @@ export default function Contact() {
   }, []);
 
   return (
-    <motion.section
-      className='contact layout'
-      variants={container}
-      initial='hidden'
-      animate='show'
-      page={"Portfolio Cyril Lesot, developpeur front-end et mobile - contact"}
-    >
+    <motion.section className='contact layout' variants={container} initial='hidden' animate='show'>
+      <Head>
+        <meta name='google-site-verification' content='_rX4UrBTq40RyUQxfSe51DRs4CYurT6uJZJlsPX0MA4' />
+        <meta name='description' content='Portfolio de Cyril Lesot, Web Developpeur front-end et mobile'></meta>
+        <title>{"Portfolio Cyril Lesot, developpeur front-end et mobile - contact"}</title>
+      </Head>
       <Header />
 
       <motion.h1 variants={item}>{traduction[lang].contact.title}</motion.h1>

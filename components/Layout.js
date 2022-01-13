@@ -12,27 +12,26 @@ export default function Layout({ children, page }) {
 
   return (
     <>
-      <html lang='fr'>
-        <Head>
-          <meta name='google-site-verification' content='_rX4UrBTq40RyUQxfSe51DRs4CYurT6uJZJlsPX0MA4' />
-          <meta name='description' content='Portfolio de Cyril Lesot, Web Developpeur front-end et mobile'></meta>
-          <title>{page}</title>
-        </Head>
+      <Head>
+        <meta name='google-site-verification' content='_rX4UrBTq40RyUQxfSe51DRs4CYurT6uJZJlsPX0MA4' />
+        <meta name='description' content='Portfolio de Cyril Lesot, Web Developpeur front-end et mobile'></meta>
+        <title>{page}</title>
+      </Head>
+      <Header />
 
-        <Header />
-        <motion.main
-          key='page'
-          variants={variants} // Pass the variant object into Framer Motion
-          initial='hidden' // Set the initial state to variants.hidden
-          animate='enter' // Animated state to variants.enter
-          exit='exit'
-          transition={{ type: "linear", duration: 1 }} // Set the transition to linear
-          className='layout'
-        >
-          {children}
-        </motion.main>
-        <Footer />
-      </html>
+      <motion.main
+        key='page'
+        variants={variants} // Pass the variant object into Framer Motion
+        initial='hidden' // Set the initial state to variants.hidden
+        animate='enter' // Animated state to variants.enter
+        exit='exit'
+        transition={{ type: "linear", duration: 1 }} // Set the transition to linear
+        className='layout'
+      >
+        {children}
+      </motion.main>
+
+      <Footer />
     </>
   );
 }
