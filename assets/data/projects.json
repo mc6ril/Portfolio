@@ -9,12 +9,7 @@
     },
     "link": "https://react-mrmoustache-cyril.netlify.app/",
     "github": "https://github.com/mc6ril/React-vinted-front",
-    "icons": [
-      { "type": "fab", "iconType": "html5", "color": "#DC4A25" },
-      { "type": "fab", "iconType": "css3-alt", "color": "#3495D0" },
-      { "type": "fab", "iconType": "react", "color": "#5ED2F3" },
-      { "type": "fab", "iconType": "node", "color": "#75AC5F" }
-    ],
+    "icons": ["html", "css", "react", "node"],
     "image": "images/m-moustache.jpg"
   },
   {
@@ -27,12 +22,7 @@
     },
     "link": "https://marvel-by-cyril-react.netlify.app/",
     "github": "https://github.com/mc6ril/marvel-front",
-    "icons": [
-      { "type": "fab", "iconType": "html5", "color": "#DC4A25" },
-      { "type": "fab", "iconType": "css3-alt", "color": "#3495D0" },
-      { "type": "fab", "iconType": "react", "color": "#5ED2F3" },
-      { "type": "fab", "iconType": "node", "color": "#75AC5F" }
-    ],
+    "icons": ["html", "css", "react", "node"],
     "image": "images/marvel.png"
   },
   {
@@ -44,12 +34,7 @@
       "description": "Realization of a mobile application using React Native, for meetings between bikers and around events"
     },
     "link": "/riderz",
-    "icons": [
-      { "type": "fab", "iconType": "html5", "color": "#DC4A25" },
-      { "type": "fab", "iconType": "css3-alt", "color": "#3495D0" },
-      { "type": "fab", "iconType": "react", "color": "#5ED2F3" },
-      { "type": "fab", "iconType": "node", "color": "#75AC5F" }
-    ],
+    "icons": ["html", "css", "react", "node"],
     "image": "images/riderz.png"
   }
 ]
