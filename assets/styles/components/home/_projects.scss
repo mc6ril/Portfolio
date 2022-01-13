@@ -1,0 +1,99 @@
+// projects section
+.projects {
+  width: 70%;
+  margin: 20px auto 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  p {
+    max-width: 850px;
+    text-align: center;
+    a {
+      color: $bgc-two;
+      font-weight: bold;
+    }
+  }
+  .all-projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 135px;
+    margin-top: 90px;
+    .project {
+      width: 80%;
+      height: 480px;
+      box-shadow: 0 20px 80px 0 rgb(0 0 0 / 45%);
+      border-radius: 8px;
+      overflow: hidden;
+      &:nth-child(odd) {
+        margin-right: 50px;
+      }
+      .image {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: $bgc-two;
+        img {
+          object-fit: cover;
+          width: 100%;
+        }
+        .content {
+          width: calc(100% + 300px);
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-evenly;
+          gap: 20px;
+          opacity: 0;
+          padding: 5%;
+          &:hover {
+            color: $color;
+            animation: transition 0.7s ease-in-out;
+            animation-fill-mode: forwards;
+          }
+          p {
+            text-align: left;
+            max-width: 50%;
+          }
+
+          @keyframes transition {
+            0% {
+              transform: translateX(-300px);
+              opacity: 0;
+            }
+            100% {
+              transform: translateX(0);
+              opacity: 1;
+            }
+          }
+          .logos {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            width: 100%;
+          }
+          .links {
+            display: flex;
+            gap: 20px;
+            a {
+              min-height: 48px;
+              min-width: 155px;
+              background-color: $bgc;
+              color: $color;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 10px;
+              margin-top: 20%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
