@@ -19,10 +19,29 @@ export const traduction = {
         applicationTitle: "Plateformes",
         application: "Application mobile, Application web, Back-office",
         languagesTitle: "Languages",
-        languages: "React, React Native, Redux, MySQL, HTML, SAAS",
+        languages: ["react", "redux", "mysql", "html", "sass"],
         devToolsTitle: "Outils de développement",
-        contentDevtools: ["Git", "Terminal", "OVH", "Stripe", "Postman", "Express"],
+        contentDevtools: ["Git", "Terminal", "OVH", "Stripe", "Postman", "Express", "Xcode"],
         image: "images/bocoloco.png",
+        projects: {
+          one: {
+            title: "Application back-office (React)",
+            list: [
+              `Intégration de nouveaux graphiques pour suivre l'activité avec Rechartjs et mySQL`,
+              `Développement d'envoie de facture depuis l'application back-office en utilisant l'API Stripe`,
+              `Refonte du CSS avec l'implémentation de Saas`,
+              `Revue et mise à jour du code existant`,
+            ],
+          },
+          two: {
+            title: "Application Mobile (React Native)",
+            list: [
+              `Utilisation de Expo et du langage natif de React Native`,
+              `Manipulation d'image et automatisation d'envoie de fichier vers une imprimante en bluetooth`,
+              `Mise à jour du code existant`,
+            ],
+          },
+        },
       },
     },
     hardSkills: {
@@ -108,10 +127,29 @@ export const traduction = {
         applicationTitle: "Plateforms",
         application: "Mobil app, Web app, Back-office",
         languagesTitle: "Language",
-        languages: "React, React Native, Redux, MySQL, HTML, SAAS",
+        languages: ["react", "redux", "mysql", "html", "sass"],
         devToolsTitle: "Devtools",
-        contentDevtools: ["Git", "Terminal", "OVH", "Stripe", "Postman", "Express"],
+        contentDevtools: ["Git", "Terminal", "OVH", "Stripe", "Postman", "Express", "Xcode"],
         image: "images/bocoloco.png",
+        projects: {
+          one: {
+            title: "Back office Application (React)",
+            list: [
+              `Integration of new graphs to track activity with Rechartjs and mySQL`,
+              `Development of invoice sending from the back-office application using the Stripe API`,
+              `CSS redesign with the implementation of Saas`,
+              `Review and update of existing code`,
+            ],
+          },
+          two: {
+            title: "Mobile Application (React Native)",
+            list: [
+              `Using Expo and React Native's native language`,
+              `Image manipulation and file sending automation to a bluetooth printer`,
+              `Review and update of existing code`,
+            ],
+          },
+        },
       },
     },
     hardSkills: {
