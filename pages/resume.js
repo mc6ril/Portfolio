@@ -93,7 +93,6 @@ export default function Resume({ page }) {
                   <li>Création de sites web dynamiques et statiques (React et Next.js)</li>
                   <li>Utilisation de Redux</li>
                   <li>Conception d'applications mobile pour iOS et Android (React Native)</li>
-                  <li>Implémentation de tests unitaire</li>
                   <li>Code versionning avec Github</li>
                   <li>Connaissance de Typescript</li>
                 </ul>
