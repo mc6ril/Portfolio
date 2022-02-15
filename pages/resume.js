@@ -22,7 +22,16 @@ export default function Resume({ page }) {
             <span>Paris, 75012</span>
             <span>06 79 15 86 96</span>
             <span>cyril.lesot@yahoo.fr</span>
-            <span>https://github.com/mc6ril</span>
+            <span>
+              <a href='https://github.com/mc6ril' target='_blank' rel='noreferrer' alt='page personnel github'>
+                https://github.com/mc6ril
+              </a>
+            </span>
+            <span>
+              <a href='https://www.linkedin.com/in/cyril-lesot-384380100/' target='_blank' rel='noreferrer' alt='page personnel linkedin'>
+                cyril-lesot-384380100/
+              </a>
+            </span>
           </div>
           <div className='resume-hardskills'>
             <h2>HardSkills</h2>
@@ -51,6 +60,13 @@ export default function Resume({ page }) {
               <li>Travail d'équipe</li>
             </ul>
           </div>
+          <div>
+            <h2>Langues</h2>
+            <ul style={{ listStyleType: "none" }}>
+              <li>Anglais - professionnel</li>
+              <li>Espagnol - professionnel</li>
+            </ul>
+          </div>
           <div className='hobbies'>
             <h2>Centres d'intérêts</h2>
             <div className='hobbies-list'>
@@ -73,6 +89,58 @@ export default function Resume({ page }) {
         <div className='right-resume'>
           <div className='resume-header'>
             <p>{`Après plusieurs années en tant que Revenue Manager dans l'hôtellerie, j'ai décidé de me former au métier de web développeur pour acquérir de nouvelles compétences. Ayant terminé ma formation au Réacteur à Paris, et après une expérience de près de 5 mois au sein d'une startup en tant que developpeur fullstack JS/ React, je suis actuellement en recherche active de mon premier poste !`}</p>
+          </div>
+          <div className='resume-box'>
+            <h2>Parcours professionnel</h2>
+            <div className='box'>
+              <div className='dates'>
+                <p>10/21 - 02/22</p>
+              </div>
+              <div className='details'>
+                <h3>Développeur fullstack JS/React</h3>
+                <span>Bocoloco, Paris (75)</span> <br />
+                <h4 className='title'>{`>`} Application de pilotage d'entreprise / CRM (React)</h4>
+                <ul>
+                  <li>Intégration de nouveaux graphiques pour suivre l'activité avec Rechartjs et mySQL (back-end / front-end)</li>
+                  <li>Automatisation d'envoie de facture depuis l'application back-office en utilisant l'API Stripe (back-end / front-end)</li>
+                  <li>Utilisation de Redux</li>
+                  <li>Refonte du CSS avec l'implémentation de Saas</li>
+                  <li>Revue et refactoring du code existant</li>
+                </ul>
+                <h4 className='title'>{`>`} Application mobile (React Native)</h4>
+                <ul>
+                  <li>Utilisation de Expo et du langage natif de React Native</li>
+                  <li>Implémentation d'une fonctionnalité de modification d'image et d'envoie de fichier à une imprimante en bluetooth</li>
+                </ul>
+              </div>
+            </div>
+            <div className='box'>
+              <div className='dates'>
+                <p>12/19 - 08/20</p>
+              </div>
+              <div className='details'>
+                <h3>Revenue Manager multi-hôtels</h3>
+                <span>Accor, Rungis (94)</span>
+              </div>
+            </div>
+            <div className='box'>
+              <div className='dates'>
+                <p>07/19 - 12/19</p>
+              </div>
+              <div className='details'>
+                <h3>Cluster Revenue Manager</h3>
+                <span>Marriott, Paris Champs-Elysées (75)</span>
+              </div>
+            </div>
+            <div className='box'>
+              <div className='dates'>
+                <p>10/17 - 07/19</p>
+              </div>
+              <div className='details'>
+                <h3>Revenue Manager multi-hôtels</h3>
+                <span>Accor, Roissy-en-France (95)</span>
+              </div>
+            </div>
           </div>
           <div className='resume-box'>
             <h2>Formation</h2>
@@ -143,58 +211,6 @@ export default function Resume({ page }) {
                 </a>
               </li>
             </ul>
-          </div>
-          <div className='resume-box'>
-            <h2>Parcours professionnel</h2>
-            <div className='box'>
-              <div className='dates'>
-                <p>10/21 - 02/22</p>
-              </div>
-              <div className='details'>
-                <h3>Développeur fullstack JS/React</h3>
-                <span>Bocoloco, Paris (75)</span> <br />
-                <h4 className='title'>{`>`} Application de pilotage d'entreprise / CRM (React)</h4>
-                <ul>
-                  <li>Intégration de nouveaux graphiques pour suivre l'activité avec Rechartjs et mySQL (back-end / front-end)</li>
-                  <li>Automatisation d'envoie de facture depuis l'application back-office en utilisant l'API Stripe (back-end / front-end)</li>
-                  <li>Utilisation de Redux</li>
-                  <li>Refonte du CSS avec l'implémentation de Saas</li>
-                  <li>Revue et refactoring du code existant</li>
-                </ul>
-                <h4 className='title'>{`>`} Application mobile (React Native)</h4>
-                <ul>
-                  <li>Utilisation de Expo et du langage natif de React Native</li>
-                  <li>Implémentation d'une fonctionnalité de modification d'image et d'envoie de fichier à une imprimante en bluetooth</li>
-                </ul>
-              </div>
-            </div>
-            <div className='box'>
-              <div className='dates'>
-                <p>12/19 - 08/20</p>
-              </div>
-              <div className='details'>
-                <h3>Revenue Manager multi-hôtels</h3>
-                <span>Accor, Rungis (94)</span>
-              </div>
-            </div>
-            <div className='box'>
-              <div className='dates'>
-                <p>07/19 - 12/19</p>
-              </div>
-              <div className='details'>
-                <h3>Cluster Revenue Manager</h3>
-                <span>Marriott, Paris Champs-Elysées (75)</span>
-              </div>
-            </div>
-            <div className='box'>
-              <div className='dates'>
-                <p>10/17 - 07/19</p>
-              </div>
-              <div className='details'>
-                <h3>Revenue Manager multi-hôtels</h3>
-                <span>Accor, Roissy-en-France (95)</span>
-              </div>
-            </div>
           </div>
         </div>
       </section>
