@@ -1,28 +1,32 @@
 {
-  "name": "portfolio-next",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@fontsource/league-spartan": "4.5.0",
-    "axios": "^0.21.4",
-    "framer-motion": "^4.1.17",
-    "next": "11.1.2",
-    "notyf": "^3.10.0",
-    "pdfmake": "^0.2.2",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-icons": "^4.3.1",
-    "react-intersection-observer": "^8.32.1",
-    "sass": "^1.43.4"
-  },
-  "devDependencies": {
-    "eslint": "7.32.0",
-    "eslint-config-next": "11.1.2"
-  }
+    "name": "portfolio-next",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@fontsource/league-spartan": "4.5.0",
+        "axios": "^0.21.4",
+        "framer-motion": "^4.1.17",
+        "next": "12.3.4",
+        "notyf": "^3.10.0",
+        "pdfmake": "^0.2.2",
+        "react": "17.0.2",
+        "react-dom": "17.0.2",
+        "react-icons": "^4.3.1",
+        "react-intersection-observer": "^8.32.1",
+        "sass": "^1.43.4",
+        "@types/node": "14",
+        "@types/react": "17.0.88",
+        "@types/react-dom": "17.0.26"
+    },
+    "devDependencies": {
+        "eslint": "8.57.0",
+        "eslint-config-next": "12.3.4",
+        "typescript": "4.8.4"
+    }
 }
