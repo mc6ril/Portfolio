@@ -100,24 +100,42 @@ export default function Resume({ page }: ResumeProps): React.JSX.Element {
                         <h2>Parcours professionnel</h2>
                         <div className="box">
                             <div className="dates">
+                                <p>03/22 - en poste</p>
+                            </div>
+                            <div className="details">
+                                <h3>Développeur d'application mobile React Native</h3>
+                                <span>Perifit, Paris (75)</span>
+                                <h4 className="title">{`>`} Développement et évolution de l’application Perifit Pump</h4>
+                                <ul>
+                                    <li>
+                                        Conception et développement de l’application depuis le MVP jusqu'à sa mise en production à grande échelle, avec une adoption par plusieurs milliers
+                                        d’utilisatrices.
+                                    </li>
+                                    <li>Stack mobile : React Native, TypeScript, Redux, React Navigation, Jest, ESLint, Reanimated</li>
+                                    <li>Implémentation et amélioration de la gestion Bluetooth Low Energy (BLE) pour connecter et synchroniser jusqu’à deux appareils simultanément.</li>
+                                    <li>Développement et intégration du processus de mise à jour firmware des devices directement depuis l’application.</li>
+                                    <li>Mise en place et gestion des fonctionnalités Firebase : authentification, Remote Config, analytics.</li>
+                                </ul>
+                                <h4 className="title">{`>`} Collaboration et méthodologie</h4>
+                                <ul>
+                                    <li>Développement initial seul, puis collaboration avec une équipe grandissante (ajout d’un second développeur, d’un PM, et structuration du projet).</li>
+                                    <li>Participation active aux sprints agiles (cycles de 2 semaines), incluant conception, développement, tests et revue de code.</li>
+                                    <li>Force de proposition sur l’implémentation des nouvelles fonctionnalités, l’amélioration de l’architecture technique et l’expérience utilisateur.</li>
+                                    <li>Collaboration étroite avec les équipes hardware et firmware pour tester et valider les mises à jour du produit.</li>
+                                    <li>
+                                        Collaboration internationale : travail quotidien avec des développeurs basés au Vietnam, adaptation aux contraintes horaires, coordination asynchrone efficace,
+                                        pair programming à distance.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="box">
+                            <div className="dates">
                                 <p>10/21 - 02/22</p>
                             </div>
                             <div className="details">
                                 <h3>Développeur fullstack JS/React</h3>
                                 <span>Bocoloco, Paris (75)</span> <br />
-                                <h4 className="title">{`>`} Application de pilotage d'entreprise / CRM (React)</h4>
-                                <ul>
-                                    <li>Intégration de nouveaux graphiques pour suivre l'activité avec Rechartjs et mySQL (back-end / front-end)</li>
-                                    <li>Automatisation d'envoie de facture depuis l'application back-office en utilisant l'API Stripe (back-end / front-end)</li>
-                                    <li>Utilisation de Redux</li>
-                                    <li>Refonte du CSS avec l'implémentation de Saas</li>
-                                    <li>Revue et refactoring du code existant</li>
-                                </ul>
-                                <h4 className="title">{`>`} Application mobile (React Native)</h4>
-                                <ul>
-                                    <li>Utilisation de Expo et du langage natif de React Native</li>
-                                    <li>Implémentation d'une fonctionnalité de modification d'image et d'envoie de fichier à une imprimante en bluetooth</li>
-                                </ul>
                             </div>
                         </div>
                         <div className="box">
@@ -194,6 +212,9 @@ export default function Resume({ page }: ResumeProps): React.JSX.Element {
                     <div className="resume-projects">
                         <h2>Projets réalisés depuis février 2021</h2>
                         <ul>
+                            <li>
+                                Application mobile Perifit Pump : <Link href="https://fr.perifit.co/products/perifit-pump">https://fr.perifit.co/products/perifit-pump</Link>
+                            </li>
                             <li>
                                 Mon portfolio : <Link href="https://cyril-lesot-portfolio.vercel.app/">https://cyril-lesot-portfolio.vercel.app/</Link>
                             </li>
