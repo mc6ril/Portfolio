@@ -18,9 +18,9 @@ export default function Resume({ page }: ResumeProps): React.JSX.Element {
                         <div className="resume-profil-image">
                             <Image src="/images/profil3.jpg" alt="Ma photo sur le CV de Cyril Lesot" width="255" height="255" />
                         </div>
-                        <h3>Cyril Lesot, 31 ans</h3>
+                        <h3>Cyril Lesot, {new Date().getFullYear() - 1990} ans</h3>
                         <p>
-                            Développeur Front-end React.js <br /> Web et mobile
+                            Développeur Mobile React Native <br />
                         </p>
                     </div>
                     <div className="resume-coordinates">
@@ -94,7 +94,7 @@ export default function Resume({ page }: ResumeProps): React.JSX.Element {
                 </div>
                 <div className="right-resume">
                     <div className="resume-header">
-                        <p>{`Après plusieurs années en tant que Revenue Manager dans l'hôtellerie, j'ai décidé de me former au métier de web développeur pour acquérir de nouvelles compétences. Ayant terminé ma formation au Réacteur à Paris, et après une expérience de près de 5 mois au sein d'une startup en tant que developpeur fullstack JS/ React, je suis actuellement en recherche active de mon premier poste !`}</p>
+                        <p>{`Ancien Revenue Manager reconverti en Développeur Web & Mobile. Depuis 2022, je conçois et fais évoluer l’application Perifit Pump, de la création from scratch jusqu’au scale-up produit en équipe internationale.`}</p>
                     </div>
                     <div className="resume-box">
                         <h2>Parcours professionnel</h2>
