@@ -1,33 +1,35 @@
 // hard-skills section
+@use "../../variables" as *;
+
 .hard-skills {
-  margin-top: -8rem !important ;
-  margin-bottom: 8rem !important ;
-  height: 580px;
-  width: 1200px;
-  margin: 0 auto;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: row;
-  background-color: $bcg-hard-skills;
-  box-shadow: $shadow;
-  div {
-    height: 100%;
-    width: 50%;
+    margin-top: -8rem !important ;
+    margin-bottom: 8rem !important ;
+    height: 580px;
+    width: 1200px;
+    margin: 0 auto;
+    border-radius: 15px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 30px 45px;
-    border-bottom: $border-two;
-    text-align: center;
-    .icon-code,
-    .icon-database,
-    .icon-smartphone {
-      color: $bgc-two;
-      font-size: 42px;
+    flex-direction: row;
+    background-color: $bcg-hard-skills;
+    box-shadow: $shadow;
+    div {
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 30px 45px;
+        border-bottom: $border-two;
+        text-align: center;
+        .icon-code,
+        .icon-database,
+        .icon-smartphone {
+            color: $bgc-two;
+            font-size: 42px;
+        }
+        &:not(:last-child) {
+            border-right: $border-two;
+        }
     }
-    &:not(:last-child) {
-      border-right: $border-two;
-    }
-  }
 }

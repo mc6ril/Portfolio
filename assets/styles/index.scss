@@ -1,18 +1,18 @@
-@import "./settings";
-@import "./variables";
+@use "./settings";
+@use "./variables" as *;
 
 // Import Pages
-@import "./pages/home.scss";
-@import "./pages/contact.scss";
-@import "./pages/resume.scss";
-@import "./pages/riderz.scss";
+@use "./pages/home.scss";
+@use "./pages/contact.scss";
+@use "./pages/resume.scss";
+@use "./pages/riderz.scss";
 
 // Import components
-@import "./components/header.scss";
-@import "./components/footer.scss";
-@import "./components/home/last_works.scss";
-@import "./components/home/hard_skills.scss";
-@import "./components/home/projects.scss";
+@use "./components/header.scss";
+@use "./components/footer.scss";
+@use "./components/home/last_works.scss";
+@use "./components/home/hard_skills.scss";
+@use "./components/home/projects.scss";
 
 // Import Responsive
-@import "./responsive/responsive";
+@use "./responsive/responsive";

@@ -1,172 +1,174 @@
+@use "../variables" as *;
+
 .resume {
-  display: flex;
-  flex-direction: row;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-top: 8rem;
-  padding-bottom: 12rem;
-  h2 {
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  ul {
-    list-style-type: disc;
-    margin-left: 20px;
-  }
-
-  .left-resume > div,
-  .right-resume > div {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 30px;
-  }
-  /* Left column */
-  .left-resume {
-    width: 30%;
-    background-color: $bgc;
-    color: $color;
-    border: $border-hover;
-    padding-top: 20px;
-    > div {
-      h2 {
-        background-color: $bgc-two;
-        width: 100%;
-      }
-      h4,
-      ul {
-        padding-left: 20px;
-        margin-top: 10px;
-      }
-      p {
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 8rem;
+    padding-bottom: 12rem;
+    h2 {
+        margin-bottom: 20px;
         text-align: center;
-        padding: 0;
-        margin-top: 20px;
-      }
-      span {
-        padding-left: 20px;
-      }
     }
-    .resume-profil {
-      align-items: center;
-      img {
-        object-fit: cover;
-      }
-      h3 {
-        color: $color;
-      }
+    ul {
+        list-style-type: disc;
+        margin-left: 20px;
     }
-    .resume-hardskills {
-      .icons {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
-        align-self: center;
-        gap: 10px;
-      }
 
-      svg:not(:last-child) {
-        margin-right: 10px;
-      }
-    }
-    .hobbies {
-      .hobbies-list {
+    .left-resume > div,
+    .right-resume > div {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
         gap: 10px;
-        width: 100%;
-        div {
-          display: flex;
-          flex-direction: row;
-          width: 100%;
-          margin-left: 20px;
-          svg {
-            width: 10%;
-          }
-          span {
-            flex: 1;
-          }
-        }
-      }
+        margin-bottom: 30px;
     }
-  }
-  /* right-column */
-  .right-resume {
-    width: 70%;
-    border: $border-hover;
-    border-left: none;
-    background-color: $white;
+    /* Left column */
+    .left-resume {
+        width: 30%;
+        background-color: $bgc;
+        color: $color;
+        border: $border-hover;
+        padding-top: 20px;
+        > div {
+            h2 {
+                background-color: $bgc-two;
+                width: 100%;
+            }
+            h4,
+            ul {
+                padding-left: 20px;
+                margin-top: 10px;
+            }
+            p {
+                text-align: center;
+                padding: 0;
+                margin-top: 20px;
+            }
+            span {
+                padding-left: 20px;
+            }
+        }
+        .resume-profil {
+            align-items: center;
+            img {
+                object-fit: cover;
+            }
+            h3 {
+                color: $color;
+            }
+        }
+        .resume-hardskills {
+            .icons {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: auto;
+                align-self: center;
+                gap: 10px;
+            }
 
-    > div {
-      h2 {
-        position: relative;
-        width: 100%;
-        padding: 5px 20px;
-        &::before,
-        &::after {
-          position: absolute;
-          content: "";
-          width: 95%;
-          height: 2px;
-          background-color: $color2;
-          left: 20px;
+            svg:not(:last-child) {
+                margin-right: 10px;
+            }
         }
-        &::before {
-          top: 0;
+        .hobbies {
+            .hobbies-list {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                width: 100%;
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    width: 100%;
+                    margin-left: 20px;
+                    svg {
+                        width: 10%;
+                    }
+                    span {
+                        flex: 1;
+                    }
+                }
+            }
         }
-        &::after {
-          bottom: 0;
+    }
+    /* right-column */
+    .right-resume {
+        width: 70%;
+        border: $border-hover;
+        border-left: none;
+        background-color: $white;
+
+        > div {
+            h2 {
+                position: relative;
+                width: 100%;
+                padding: 5px 20px;
+                &::before,
+                &::after {
+                    position: absolute;
+                    content: "";
+                    width: 95%;
+                    height: 2px;
+                    background-color: $color2;
+                    left: 20px;
+                }
+                &::before {
+                    top: 0;
+                }
+                &::after {
+                    bottom: 0;
+                }
+            }
         }
-      }
+        .resume-header {
+            padding: 50px 20px;
+            width: 100%;
+            text-align: justify;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            p {
+                padding: 0;
+                font-style: italic;
+            }
+        }
+        .resume-box .box {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 0 10px 0 20px;
+            width: 100%;
+            .dates {
+                min-width: 20%;
+                margin-top: 0.25em;
+            }
+            .details {
+                width: 80%;
+                flex: 1;
+            }
+            ul {
+                padding-left: 10px;
+            }
+            .title {
+                font-size: calc($font-size * 1.2);
+                line-height: 1.22em;
+                color: $bgc;
+                font-family: $title-font;
+                font-style: italic;
+                font-weight: bold;
+            }
+        }
+        .resume-projects {
+            ul {
+                margin-left: 60px;
+            }
+            a {
+                text-decoration: underline;
+            }
+        }
     }
-    .resume-header {
-      padding: 50px 20px;
-      width: 100%;
-      text-align: justify;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0;
-      p {
-        padding: 0;
-        font-style: italic;
-      }
-    }
-    .resume-box .box {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      padding: 0 10px 0 20px;
-      width: 100%;
-      .dates {
-        min-width: 20%;
-        margin-top: 0.25em;
-      }
-      .details {
-        width: 80%;
-        flex: 1;
-      }
-      ul {
-        padding-left: 10px;
-      }
-      .title {
-        font-size: calc($font-size * 1.2);
-        line-height: 1.22em;
-        color: $bgc;
-        font-family: $title-font;
-        font-style: italic;
-        font-weight: bold;
-      }
-    }
-    .resume-projects {
-      ul {
-        margin-left: 60px;
-      }
-      a {
-        text-decoration: underline;
-      }
-    }
-  }
 }

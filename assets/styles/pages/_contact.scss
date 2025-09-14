@@ -1,113 +1,115 @@
-.contact {
-  width: 100%;
-  padding-bottom: 100px;
-  h1 {
-    text-align: center;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding-top: 80px;
-    margin-bottom: 40px;
-    font-size: 48px;
-    line-height: 1.05em;
-    font-weight: 800;
-    letter-spacing: 1px;
-  }
-  .profil-picture {
-    margin: 0 auto 30px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    img {
-      object-fit: contain;
-    }
-  }
-  form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 640px;
-    margin: 32px auto 0;
-    .first-inputs {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      gap: 20px;
-      width: 100%;
-      height: 130px;
+@use "../variables" as *;
 
-      input[type="text"],
-      input[type="email"] {
-        outline: none;
-        background-color: $color;
-        font-size: 16px;
-        line-height: 1.375em;
-        font-weight: 300;
-        padding-left: 10px;
-        border: $border-hover;
-        font-family: $text-font;
-      }
-      input[type="text"],
-      input[type="email"] {
-        width: 310px;
-        height: 55px;
-      }
+.contact {
+    width: 100%;
+    padding-bottom: 100px;
+    h1 {
+        text-align: center;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding-top: 80px;
+        margin-bottom: 40px;
+        font-size: 48px;
+        line-height: 1.05em;
+        font-weight: 800;
+        letter-spacing: 1px;
     }
-    .control {
-      display: flex;
-      flex-direction: column;
-    }
-    textarea[name="message"] {
-      height: 200px;
-      width: 640px;
-      resize: vertical;
-      min-height: 40px;
-      outline: none;
-      background-color: $color;
-      font-size: 16px;
-      line-height: 1.375em;
-      font-weight: 300;
-      padding-left: 10px;
-      padding-top: 5px;
-      border: $border-hover;
-      font-family: $text-font;
-    }
-    label {
-      font-size: 16px;
-      line-height: 1.375em;
-      font-weight: 400;
-      color: var(--label-color);
-    }
-    input[type="submit"] {
-      margin-top: 55px;
-      border: $border-hover;
-      border-radius: 25px;
-      padding: 10px 70px;
-      cursor: pointer;
-      font-size: 16px;
-      line-height: 1.375em;
-      font-weight: 300;
-      font-family: $text-font;
-      background-color: $color;
-      &:hover {
-        animation: submit-hover 0.7s;
-        animation-fill-mode: forwards;
-      }
-      @keyframes submit-hover {
-        0% {
-          color: $color;
-          background-color: $color;
+    .profil-picture {
+        margin: 0 auto 30px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        img {
+            object-fit: contain;
         }
-        100% {
-          background-color: $bgc-two;
-          color: $color;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 640px;
+        margin: 32px auto 0;
+        .first-inputs {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+            height: 130px;
+
+            input[type="text"],
+            input[type="email"] {
+                outline: none;
+                background-color: $color;
+                font-size: 16px;
+                line-height: 1.375em;
+                font-weight: 300;
+                padding-left: 10px;
+                border: $border-hover;
+                font-family: $text-font;
+            }
+            input[type="text"],
+            input[type="email"] {
+                width: 310px;
+                height: 55px;
+            }
         }
-      }
+        .control {
+            display: flex;
+            flex-direction: column;
+        }
+        textarea[name="message"] {
+            height: 200px;
+            width: 640px;
+            resize: vertical;
+            min-height: 40px;
+            outline: none;
+            background-color: $color;
+            font-size: 16px;
+            line-height: 1.375em;
+            font-weight: 300;
+            padding-left: 10px;
+            padding-top: 5px;
+            border: $border-hover;
+            font-family: $text-font;
+        }
+        label {
+            font-size: 16px;
+            line-height: 1.375em;
+            font-weight: 400;
+            color: var(--label-color);
+        }
+        input[type="submit"] {
+            margin-top: 55px;
+            border: $border-hover;
+            border-radius: 25px;
+            padding: 10px 70px;
+            cursor: pointer;
+            font-size: 16px;
+            line-height: 1.375em;
+            font-weight: 300;
+            font-family: $text-font;
+            background-color: $color;
+            &:hover {
+                animation: submit-hover 0.7s;
+                animation-fill-mode: forwards;
+            }
+            @keyframes submit-hover {
+                0% {
+                    color: $color;
+                    background-color: $color;
+                }
+                100% {
+                    background-color: $bgc-two;
+                    color: $color;
+                }
+            }
+        }
+        .message {
+            text-align: center;
+            padding-top: 20px;
+        }
     }
-    .message {
-      text-align: center;
-      padding-top: 20px;
-    }
-  }
 }

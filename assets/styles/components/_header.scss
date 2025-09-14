@@ -1,60 +1,62 @@
+@use "../variables" as *;
+
 header {
-  background-color: $bgc;
-  height: 60px;
-  position: fixed;
-  width: 100%;
-  z-index: 9999;
-  nav {
-    height: 100%;
+    background-color: $bgc;
+    height: 60px;
+    position: fixed;
     width: 100%;
-    ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      gap: 30px;
-      background-color: $bgc;
-      height: 100%;
-      width: 100%;
-      a {
+    z-index: 9999;
+    nav {
+        height: 100%;
+        width: 100%;
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            background-color: $bgc;
+            height: 100%;
+            width: 100%;
+            a {
+                color: $color;
+                font-family: $title-font;
+                position: relative;
+                &:after {
+                    content: "";
+                    width: 80%;
+                    background-color: $color;
+                    height: 1px;
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    transform-origin: center;
+                    transform: translate(-50%, 0) scaleX(0);
+                    transition: transform 0.5s ease-in-out;
+                }
+                &:hover::after {
+                    transform: translate(-50%) scaleX(1);
+                }
+            }
+        }
+    }
+    .name {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(50%, -50%);
         color: $color;
-        font-family: $title-font;
-        position: relative;
-        &:after {
-          content: "";
-          width: 80%;
-          background-color: $color;
-          height: 1px;
-          position: absolute;
-          top: 100%;
-          left: 50%;
-          transform-origin: center;
-          transform: translate(-50%, 0) scaleX(0);
-          transition: transform 0.5s ease-in-out;
-        }
-        &:hover::after {
-          transform: translate(-50%) scaleX(1);
-        }
-      }
     }
-  }
-  .name {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(50%, -50%);
-    color: $color;
-  }
-  .language {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(-50%, -50%);
-    select {
-      outline: none;
-      color: $color;
-      background-color: $bgc;
-      border: none;
+    .language {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-50%, -50%);
+        select {
+            outline: none;
+            color: $color;
+            background-color: $bgc;
+            border: none;
+        }
     }
-  }
 }
