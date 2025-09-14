@@ -39,10 +39,11 @@ export default function Contact(): React.JSX.Element {
             const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string;
 
             const templateParams = {
-                from_name: form.name,
-                from_email: form.email,
-                message: form.description,
-                to_email: "votre-email@example.com", // Votre email de réception
+                name: form.name, // Pour {{name}} dans le template
+                email: form.email, // Pour {{email}} dans Reply To
+                message: form.description, // Pour {{message}} dans le template
+                title: "Portfolio Cyril Lesot", // Pour {{title}} dans le sujet
+                time: new Date().toLocaleString("fr-FR"), // Pour {{time}} dans le template
             };
 
             const response = await emailjs.send(serviceId, templateId, templateParams, publicKey);
