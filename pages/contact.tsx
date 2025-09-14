@@ -112,17 +112,17 @@ export default function Contact(): React.JSX.Element {
                 <div className="first-inputs">
                     <div className="control">
                         <label htmlFor="name">{traduction[lang].contact.name}</label>
-                        <input type="text" name="name" id="name" onChange={(e) => setForm({ ...form, name: e.currentTarget.value })} />
+                        <input type="text" name="name" id="name" value={form.name} onChange={(e) => setForm({ ...form, name: e.currentTarget.value })} />
                     </div>
                     <div className="control">
                         <label htmlFor="email">{traduction[lang].contact.email}</label>
-                        <input type="email" name="email" id="email" onChange={(e) => setForm({ ...form, email: e.currentTarget.value })} />
+                        <input type="email" name="email" id="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.currentTarget.value })} />
                     </div>
                 </div>
                 <div>
                     <div className="control">
                         <label htmlFor="message">{traduction[lang].contact.message}</label>
-                        <textarea name="message" id="message" rows={5} onChange={(e) => setForm({ ...form, description: e.currentTarget.value })}></textarea>
+                        <textarea name="message" id="message" rows={5} value={form.description} onChange={(e) => setForm({ ...form, description: e.currentTarget.value })}></textarea>
                     </div>
                 </div>
 
