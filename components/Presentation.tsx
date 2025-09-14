@@ -3,7 +3,7 @@ import { traduction } from "../assets/data/lang";
 import { Context } from "./context/LangContext";
 import { useContext } from "react";
 
-export default function Presentation(): JSX.Element {
+export default function Presentation(): React.JSX.Element {
     const { lang } = useContext(Context);
     return (
         <div className="presentation">

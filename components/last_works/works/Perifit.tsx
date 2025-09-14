@@ -55,7 +55,7 @@ const Perifit: React.FC<PerifitProps> = ({ isHover }) => {
                 )}
             </div>
             <div className="image">
-                <Image src={`/${traduction[lang].lastWork.perifit.image}`} alt="Logo de l'entreprise Perifit" quality={100} layout="fill" objectFit="contain" />
+                <Image src={`/${traduction[lang].lastWork.perifit.image}`} alt="Logo de l'entreprise Perifit" fill style={{ objectFit: "contain" }} />
             </div>
         </>
     );

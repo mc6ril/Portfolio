@@ -6,7 +6,7 @@ import Profil from "../components/Profil";
 import Projects from "../components/Projects";
 import LastWorks from "../components/last_works/LastWorks";
 
-export default function Home(): JSX.Element {
+export default function Home(): React.JSX.Element {
     return (
         <Layout page={"Portfolio Cyril Lesot, developpeur front-end et mobile - accueil"}>
             <section className="home">

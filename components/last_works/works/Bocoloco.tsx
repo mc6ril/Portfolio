@@ -55,7 +55,7 @@ const Bocoloco: React.FC<BocolocoProps> = ({ isHover }) => {
                 )}
             </div>
             <div className="image">
-                <Image src={`/${traduction[lang].lastWork.bocoloco.image}`} alt="Logo de l'entreprise Bocoloco, l'épicerie zero déchet" quality={100} layout="fill" objectFit="contain" />
+                <Image src={`/${traduction[lang].lastWork.bocoloco.image}`} alt="Logo de l'entreprise Bocoloco, l'épicerie zero déchet" fill style={{ objectFit: "contain" }} quality={100} />
             </div>
         </>
     );

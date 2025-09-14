@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Footer from "./Footer";
 import Header from "./Header";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import React from "react";
 
 interface LayoutProps {
@@ -9,7 +9,7 @@ interface LayoutProps {
     page?: string;
 }
 
-export default function Layout({ children, page }: LayoutProps): JSX.Element {
+export default function Layout({ children, page }: LayoutProps): React.JSX.Element {
     const variants = {
         hidden: { opacity: 0 },
         enter: { opacity: 1 },
@@ -25,7 +25,7 @@ export default function Layout({ children, page }: LayoutProps): JSX.Element {
             </Head>
             <Header />
 
-            <motion.main key="page" variants={variants} initial="hidden" animate="enter" exit="exit" transition={{ type: "linear", duration: 1 }} className="layout">
+            <motion.main key="page" variants={variants} initial="hidden" animate="enter" exit="exit" transition={{ ease: "linear", duration: 1 }} className="layout">
                 {children}
             </motion.main>
 

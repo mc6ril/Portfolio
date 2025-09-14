@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { InView } from "react-intersection-observer";
 import { Context } from "./context/LangContext";
 import Logos from "./logos/Logos";
@@ -27,7 +27,7 @@ interface ProjectImageProps {
     code: string;
 }
 
-export default function ProjectImage({ index, project, website, code }: ProjectImageProps): JSX.Element {
+export default function ProjectImage({ index, project, website, code }: ProjectImageProps): React.JSX.Element {
     const [isVisible, setIsVisible] = useState<boolean>(true);
     const { lang } = useContext(Context);
 
@@ -40,12 +40,12 @@ export default function ProjectImage({ index, project, website, code }: ProjectI
                         ref={ref}
                         initial={{ opacity: 0 }}
                         animate={inView ? { opacity: 1 } : { opacity: 0 }}
-                        transition={{ type: "easeOut", duration: 0.6 }}
+                        transition={{ ease: "easeOut", duration: 0.6 }}
                         onMouseEnter={() => setIsVisible(false)}
                         onMouseLeave={() => setIsVisible(true)}
                     >
                         {isVisible ? (
-                            <Image src={`/${project.image}`} alt={project[lang].description} quality="100" layout="fill" objectFit="cover" />
+                            <Image src={`/${project.image}`} alt={project[lang].description} fill style={{ objectFit: "cover" }} />
                         ) : (
                             <div className="content">
                                 <h2>{project.title}</h2>
@@ -56,18 +56,14 @@ export default function ProjectImage({ index, project, website, code }: ProjectI
                                     })}
                                 </div>
                                 <div className="links">
-                                    <Link href={`${project.link}`} aria-label={`Visit ${project.title} website`}>
-                                        <a rel="noreferrer" target="_blank">
-                                            <span>{website}</span>
-                                            <Logos type="arrow-right" size="1.5em" />
-                                        </a>
+                                    <Link href={`${project.link}`} passHref aria-label={`Visit ${project.title} website`} rel="noreferrer" target="_blank">
+                                        <span>{website}</span>
+                                        <Logos type="arrow-right" size="1.5em" />
                                     </Link>
                                     {project.github && (
-                                        <Link href={`${project.github}`} aria-label={`Visit ${project.title} on Github`}>
-                                            <a rel="noreferrer" target="_blank">
-                                                <span>{code}</span>
-                                                <Logos type="github" size="1.5em" />
-                                            </a>
+                                        <Link href={`${project.github}`} passHref aria-label={`Visit ${project.title} on Github`} rel="noreferrer" target="_blank">
+                                            <span>{code}</span>
+                                            <Logos type="github" size="1.5em" />
                                         </Link>
                                     )}
                                 </div>

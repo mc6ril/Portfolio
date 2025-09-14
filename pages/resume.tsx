@@ -3,19 +3,20 @@ import React from "react";
 import Layout from "../components/Layout";
 import Image from "next/image";
 import Logos from "../components/logos/Logos";
+import Link from "next/link";
 
 interface ResumeProps {
     page?: string;
 }
 
-export default function Resume({ page }: ResumeProps): JSX.Element {
+export default function Resume({ page }: ResumeProps): React.JSX.Element {
     return (
         <Layout page="Portfolio Cyril Lesot, developpeur front-end et mobile - resume">
             <section className="resume">
                 <div className="left-resume">
                     <div className="resume-profil">
                         <div className="resume-profil-image">
-                            <Image src="/images/profil3.jpg" alt="Ma photo sur le CV de Cyril Lesot" width="255" height="255" quality={100} />
+                            <Image src="/images/profil3.jpg" alt="Ma photo sur le CV de Cyril Lesot" width="255" height="255" />
                         </div>
                         <h3>Cyril Lesot, 31 ans</h3>
                         <p>
@@ -28,14 +29,14 @@ export default function Resume({ page }: ResumeProps): JSX.Element {
                         <span>06 79 15 86 96</span>
                         <span>cyril.lesot@yahoo.fr</span>
                         <span>
-                            <a href="https://github.com/mc6ril" target="_blank" rel="noreferrer" alt="page personnel github">
+                            <Link href="https://github.com/mc6ril" target="_blank" rel="noreferrer">
                                 https://github.com/mc6ril
-                            </a>
+                            </Link>
                         </span>
                         <span>
-                            <a href="https://www.linkedin.com/in/cyril-lesot-384380100/" target="_blank" rel="noreferrer" alt="page personnel linkedin">
+                            <Link href="https://www.linkedin.com/in/cyril-lesot-384380100/" target="_blank" rel="noreferrer">
                                 cyril-lesot-384380100/
-                            </a>
+                            </Link>
                         </span>
                     </div>
                     <div className="resume-hardskills">
@@ -194,23 +195,14 @@ export default function Resume({ page }: ResumeProps): JSX.Element {
                         <h2>Projets réalisés depuis février 2021</h2>
                         <ul>
                             <li>
-                                Mon portfolio :{" "}
-                                <a href="https://cyril-lesot-portfolio.vercel.app/" alt="Lien vers le portfolio de Cyril Lesot">
-                                    https://cyril-lesot-portfolio.vercel.app/
-                                </a>
+                                Mon portfolio : <Link href="https://cyril-lesot-portfolio.vercel.app/">https://cyril-lesot-portfolio.vercel.app/</Link>
                             </li>
                             <li>{`Réalisation d'un MVP d'une application mobile en React Native : rassemblement de motards autour d'évènements`}</li>
                             <li>
-                                Site Marvel crée avec React :
-                                <a href="https://marvel-by-cyril-react.netlify.app/" alt="Lien externe ver le projet Marvel crée par Cyril Lesot pendant sa formation">
-                                    https://marvel-by-cyril-react.netlify.app/
-                                </a>
+                                Site Marvel crée avec React :<Link href="https://marvel-by-cyril-react.netlify.app/">https://marvel-by-cyril-react.netlify.app/</Link>
                             </li>
                             <li>
-                                Réplique du site M.Moustache en React :
-                                <a href="https://react-mrmoustache-cyril.netlify.app/" alt="Lien vers une réplique du site M.Moustache, crée par Cyril Lesot pendant sa formation">
-                                    https://react-mrmoustache-cyril.netlify.app/
-                                </a>
+                                Réplique du site M.Moustache en React :<Link href="https://react-mrmoustache-cyril.netlify.app/">https://react-mrmoustache-cyril.netlify.app/</Link>
                             </li>
                         </ul>
                     </div>

@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { traduction } from "../assets/data/lang";
 import { Context } from "./context/LangContext";
 import React, { useContext } from "react";
 
-export default function Header(): JSX.Element {
+export default function Header(): React.JSX.Element {
     const { lang, toggleLang } = useContext(Context);
 
     const onHandleSelect: React.ChangeEventHandler<HTMLSelectElement> = (e) => {
@@ -18,24 +18,24 @@ export default function Header(): JSX.Element {
 
     return (
         <header>
-            <Link href="/" aria-label="Home Page" rel="noreferrer" target="_blank">
-                <a className="name">Cyril Lesot</a>
+            <Link href="/" aria-label="Home Page" className="name">
+                Cyril Lesot
             </Link>
             <nav>
                 <ul>
                     <motion.li initial={{ y: -200 }} animate={{ y: 0 }} transition={{ ease: "easeOut", duration: 0.7 }}>
-                        <Link href="/" aria-label="Home Page" rel="noreferrer" target="_blank">
-                            <a>Home</a>
+                        <Link href="/" aria-label="Home Page">
+                            Home
                         </Link>
                     </motion.li>
                     <motion.li initial={{ y: -200 }} animate={{ y: 0 }} transition={{ ease: "easeOut", duration: 0.85 }}>
-                        <Link href="/resume" aria-label="CV Page" rel="noreferrer" target="_blank">
-                            <a>CV</a>
+                        <Link href="/resume" aria-label="CV Page">
+                            CV
                         </Link>
                     </motion.li>
                     <motion.li initial={{ y: -200 }} animate={{ y: 0 }} transition={{ ease: "easeOut", duration: 1 }}>
-                        <Link href="/contact" aria-label="Contact Page" rel="noreferrer" target="_blank">
-                            <a>Contact</a>
+                        <Link href="/contact" aria-label="Contact Page">
+                            Contact
                         </Link>
                     </motion.li>
                 </ul>

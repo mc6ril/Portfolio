@@ -1,50 +1,50 @@
 .home {
-  .home-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    margin-top: 90px;
-    .title {
-      font-size: 48px;
-      line-height: 54px;
-      font-weight: 800;
-      font-family: $title-font;
-      letter-spacing: 1px;
-      text-align: center;
-      margin: 30px auto;
-      max-width: 1000px;
-    }
-    .title {
-      font-size: 60px;
-    }
+    .home-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 90px;
+        .title {
+            font-size: 48px;
+            line-height: 54px;
+            font-weight: 800;
+            font-family: $title-font;
+            letter-spacing: 1px;
+            text-align: center;
+            margin: 30px auto;
+            max-width: 1000px;
+        }
+        .title {
+            font-size: 60px;
+        }
 
-    p {
-      max-width: 800px;
-      font-size: 24px;
-      font-weight: 300;
-      line-height: 36px;
+        p {
+            max-width: 800px;
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 36px;
+        }
+        .profil-picture {
+            margin: 30px auto;
+            img {
+                object-fit: cover;
+            }
+        }
     }
-    .profil-picture {
-      margin: 30px auto;
-      img {
-        object-fit: cover;
-      }
+    .presentation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 80px;
+        background-color: $bgc;
+        color: $color;
+        gap: 30px;
+        height: 600px;
+        width: 100%;
+        p {
+            max-width: 800px;
+            text-align: justify;
+        }
     }
-  }
-  .presentation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 80px;
-    background-color: $bgc;
-    color: $color;
-    gap: 30px;
-    height: 600px;
-    width: 100%;
-    p {
-      max-width: 800px;
-      text-align: justify;
-    }
-  }
 }

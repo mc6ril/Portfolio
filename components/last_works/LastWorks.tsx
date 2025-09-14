@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Context } from "../context/LangContext";
 import { traduction } from "../../assets/data/lang";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { InView } from "react-intersection-observer";
 import Bocoloco from "./works/Bocoloco";
 import Perifit from "./works/Perifit";
@@ -21,7 +21,7 @@ const LastWorks: React.FC = () => {
                             ref={ref}
                             initial={{ x: -200, opacity: 0 }}
                             animate={inView ? { x: 0, opacity: 1 } : { x: -200, opacity: 0 }}
-                            transition={{ type: "easeOut", duration: 0.8 }}
+                            transition={{ ease: "easeOut", duration: 0.8 }}
                             onMouseEnter={() => setIsHoverBocoloco(true)}
                             onMouseLeave={() => setIsHoverBocoloco(false)}
                         >
@@ -36,7 +36,7 @@ const LastWorks: React.FC = () => {
                             ref={ref}
                             initial={{ x: 200, opacity: 0 }}
                             animate={inView ? { x: 0, opacity: 1 } : { x: 200, opacity: 0 }}
-                            transition={{ type: "easeOut", duration: 0.8, delay: 0.2 }}
+                            transition={{ ease: "easeOut", duration: 0.8, delay: 0.2 }}
                             onMouseEnter={() => setIsHoverPerifit(true)}
                             onMouseLeave={() => setIsHoverPerifit(false)}
                         >

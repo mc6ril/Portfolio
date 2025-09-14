@@ -4,6 +4,7 @@ import ProjectImage from "./ProjectImage";
 import { traduction } from "../assets/data/lang";
 import { Context } from "./context/LangContext";
 import { useContext } from "react";
+import Link from "next/link";
 
 // Minimal project typing based on usage
 interface LocalizedProjectInfo {
@@ -20,7 +21,7 @@ interface ProjectItem {
     EN: LocalizedProjectInfo;
 }
 
-export default function Projects(): JSX.Element {
+export default function Projects(): React.JSX.Element {
     const projects = json as unknown as ProjectItem[];
     const { lang } = useContext(Context);
 
@@ -29,9 +30,9 @@ export default function Projects(): JSX.Element {
             <h2 className="section-title">{traduction[lang].projects.title}</h2>
             <p>
                 {traduction[lang].projects.content}{" "}
-                <a href="mailto:cyril.lesot@yahoo.fr" rel="noreferrer" target="_blank">
+                <Link href="mailto:cyril.lesot@yahoo.fr" passHref rel="noreferrer" target="_blank">
                     <span>{traduction[lang].projects.mail}</span>
-                </a>
+                </Link>
             </p>
             <div className="all-projects">
                 {projects.map((project, index) => {
