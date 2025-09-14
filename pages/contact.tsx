@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import Header from "../components/Header";
 import Image from "next/image";
-import axios from "axios";
+import emailjs from "@emailjs/browser";
 import { motion } from "motion/react";
 import { traduction } from "../assets/data/lang";
 import { Context } from "../components/context/LangContext";
@@ -25,19 +25,39 @@ export default function Contact(): React.JSX.Element {
 
     const onHandleSubmit: React.FormEventHandler<HTMLFormElement> = async (e) => {
         e.preventDefault();
+
+        // Vérification des champs requis
+        if (!form.name || !form.email || !form.description) {
+            notyf?.error({ message: `${traduction[lang].contact.emptyForm}`, duration: 3000 });
+            return;
+        }
+
         try {
-            const response = await axios.post(`https://portfolio-cyril-lesot.herokuapp.com/form`, {
-                name: form.name,
-                email: form.email,
-                description: form.description,
-            });
+            // Configuration EmailJS - Remplacez ces valeurs par vos propres clés
+            const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string;
+            const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string;
+            const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string;
+
+            const templateParams = {
+                from_name: form.name,
+                from_email: form.email,
+                message: form.description,
+                to_email: "votre-email@example.com", // Votre email de réception
+            };
+
+            const response = await emailjs.send(serviceId, templateId, templateParams, publicKey);
 
             if (response.status === 200) {
                 notyf?.success({ message: `${traduction[lang].contact.sucessMessage}`, duration: 3000 });
-            } else {
-                notyf?.error({ message: `${traduction[lang].contact.emptyForm}`, duration: 3000 });
+                // Réinitialiser le formulaire après envoi réussi
+                setForm({
+                    name: "",
+                    email: "",
+                    description: "",
+                });
             }
         } catch (error) {
+            console.error("Erreur lors de l'envoi de l'email:", error);
             notyf?.error({ message: `${traduction[lang].contact.errorMessage}`, duration: 3000 });
         }
     };

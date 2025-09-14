@@ -12,6 +12,7 @@
         "lint": "next lint"
     },
     "dependencies": {
+        "@emailjs/browser": "^4.4.1",
         "@fontsource/league-spartan": "4.5.0",
         "axios": "^0.21.4",
         "motion": "^12.23.12",
