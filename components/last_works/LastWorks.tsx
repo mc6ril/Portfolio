@@ -19,13 +19,13 @@ const LastWorks: React.FC = () => {
                         <motion.div
                             className="work"
                             ref={ref}
-                            initial={{ x: -200, opacity: 0 }}
-                            animate={inView ? { x: 0, opacity: 1 } : { x: -200, opacity: 0 }}
-                            transition={{ ease: "easeOut", duration: 0.8 }}
-                            onMouseEnter={() => setIsHoverBocoloco(true)}
-                            onMouseLeave={() => setIsHoverBocoloco(false)}
+                            initial={{ x: 200, opacity: 0 }}
+                            animate={inView ? { x: 0, opacity: 1 } : { x: 200, opacity: 0 }}
+                            transition={{ ease: "easeOut", duration: 0.8, delay: 0.2 }}
+                            onMouseEnter={() => setIsHoverPerifit(true)}
+                            onMouseLeave={() => setIsHoverPerifit(false)}
                         >
-                            <Bocoloco isHover={isHoverBocoloco} />
+                            <Perifit isHover={isHoverPerifit} />
                         </motion.div>
                     )}
                 </InView>
@@ -34,13 +34,13 @@ const LastWorks: React.FC = () => {
                         <motion.div
                             className="work"
                             ref={ref}
-                            initial={{ x: 200, opacity: 0 }}
-                            animate={inView ? { x: 0, opacity: 1 } : { x: 200, opacity: 0 }}
-                            transition={{ ease: "easeOut", duration: 0.8, delay: 0.2 }}
-                            onMouseEnter={() => setIsHoverPerifit(true)}
-                            onMouseLeave={() => setIsHoverPerifit(false)}
+                            initial={{ x: -200, opacity: 0 }}
+                            animate={inView ? { x: 0, opacity: 1 } : { x: -200, opacity: 0 }}
+                            transition={{ ease: "easeOut", duration: 0.8 }}
+                            onMouseEnter={() => setIsHoverBocoloco(true)}
+                            onMouseLeave={() => setIsHoverBocoloco(false)}
                         >
-                            <Perifit isHover={isHoverPerifit} />
+                            <Bocoloco isHover={isHoverBocoloco} />
                         </motion.div>
                     )}
                 </InView>

@@ -1,5 +1,17 @@
 [
     {
+        "title": "Perifit Pump",
+        "FR": {
+            "description": "Réalisation d'une application mobile en React Native, de tire lait portable et connecté"
+        },
+        "EN": {
+            "description": "Realization of a mobile application using React Native, for a portable and connected breast pump"
+        },
+        "link": "https://fr.perifit.co/products/perifit-pump",
+        "icons": ["react-native", "redux", "typescript", "react-native-ble-plx"],
+        "image": "images/perifit.png"
+    },
+    {
         "title": "M.Moustache",
         "FR": {
             "description": "Réalisation d'une réplique du site M.Moustache sur le modèle vinted"
@@ -36,17 +48,5 @@
         "link": "/riderz",
         "icons": ["html", "css", "react", "node"],
         "image": "images/riderz.png"
-    },
-    {
-        "title": "Perifit Pump",
-        "FR": {
-            "description": "Réalisation d'une application mobile en React Native, de tire lait portable et connecté"
-        },
-        "EN": {
-            "description": "Realization of a mobile application using React Native, for a portable and connected breast pump"
-        },
-        "link": "https://fr.perifit.co/products/perifit-pump",
-        "icons": ["react-native", "redux", "typescript", "react-native-ble-plx"],
-        "image": "images/perifit.png"
     }
 ]
