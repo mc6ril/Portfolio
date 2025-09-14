@@ -134,7 +134,7 @@ export default function Resume({ page }: ResumeProps): React.JSX.Element {
                                 <p>10/21 - 02/22</p>
                             </div>
                             <div className="details">
-                                <h3>Développeur fullstack JS/React</h3>
+                                <h3>Développeur fullstack JS/React (stage)</h3>
                                 <span>Bocoloco, Paris (75)</span> <br />
                             </div>
                         </div>
